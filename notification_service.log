@@ -1,0 +1,1035 @@
+2025-11-20 21:48:43,402 - __main__ - INFO - ============================================================
+2025-11-20 21:48:43,402 - __main__ - INFO - Starting Notification Service
+2025-11-20 21:48:43,402 - __main__ - INFO - ============================================================
+2025-11-20 21:48:43,402 - __main__ - INFO - Initializing database...
+2025-11-20 21:48:43,402 - data.database - INFO - Initializing database...
+2025-11-20 21:48:43,698 - data.database - INFO - Database initialized successfully
+2025-11-20 21:48:43,699 - __main__ - INFO - Starting queue listener...
+2025-11-20 21:48:43,699 - consumer.queue_listener - INFO - QueueListener initialized for queue: event_notifications
+2025-11-20 21:48:43,699 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 21:48:43,731 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 21:48:43,739 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.172.159.105', 59573), raddr=('34.196.5.176', 5672)>
+2025-11-20 21:48:43,739 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105c65e80>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105c65e80> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 21:48:43,761 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105c65e80> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 21:48:43,762 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105c65e80> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 21:48:43,762 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105c65e80> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 21:48:43,762 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 21:48:43,784 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 21:48:43,784 - consumer.queue_listener - INFO - Starting to consume messages from queue: event_notifications
+2025-11-20 21:48:43,792 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 21:51:34,684 - __main__ - INFO - ============================================================
+2025-11-20 21:51:34,684 - __main__ - INFO - Starting Notification Service
+2025-11-20 21:51:34,684 - __main__ - INFO - ============================================================
+2025-11-20 21:51:34,685 - __main__ - INFO - Initializing database...
+2025-11-20 21:51:34,685 - data.database - INFO - Initializing database...
+2025-11-20 21:51:34,888 - data.database - INFO - Database initialized successfully
+2025-11-20 21:51:34,888 - __main__ - INFO - Starting queue listener...
+2025-11-20 21:51:34,888 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 21:51:34,888 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 21:51:34,922 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 21:51:34,929 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.172.159.105', 60190), raddr=('34.196.5.176', 5672)>
+2025-11-20 21:51:34,929 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106965d30>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106965d30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 21:51:34,951 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106965d30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 21:51:34,951 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106965d30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 21:51:34,951 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106965d30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 21:51:34,952 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 21:51:34,971 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 21:51:34,971 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 21:51:34,978 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 21:51:34,984 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-20 21:51:34,984 - consumer.queue_listener - INFO - Processing notification: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 21:51:34,984 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 21:51:34,984 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 21:51:34,984 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 21:51:34,984 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 21:51:34,984 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-20 21:51:35,018 - processor.notification_processor - INFO - Step 3: Total participants to process: 0
+2025-11-20 21:51:35,018 - processor.notification_processor - WARNING - No participants found for event_id=bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-20 21:51:35,026 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 21:51:35,033 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-20 21:51:35,033 - consumer.queue_listener - INFO - Processing notification: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 21:51:35,033 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 21:51:35,033 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 21:51:35,033 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 21:51:35,033 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 21:51:35,033 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-20 21:51:35,058 - processor.notification_processor - INFO - Step 3: Total participants to process: 0
+2025-11-20 21:51:35,058 - processor.notification_processor - WARNING - No participants found for event_id=bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-20 21:51:35,067 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 21:55:25,863 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "10111111-1111-1111-1111-111111111111", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-20 21:55:25,866 - consumer.queue_listener - INFO - Processing notification: NotificationMessage(type=event_updated, event_id=10111111-1111-1111-1111-111111111111, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 21:55:25,874 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 21:55:25,879 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 21:55:25,882 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=10111111-1111-1111-1111-111111111111, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 21:55:25,882 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=10111111-1111-1111-1111-111111111111, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 21:55:25,883 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-20 21:55:25,925 - processor.notification_processor - INFO - Step 3: Total participants to process: 0
+2025-11-20 21:55:25,925 - processor.notification_processor - WARNING - No participants found for event_id=10111111-1111-1111-1111-111111111111
+2025-11-20 21:55:25,934 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=10111111-1111-1111-1111-111111111111, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:00:06,517 - __main__ - INFO - ============================================================
+2025-11-20 22:00:06,517 - __main__ - INFO - Starting Notification Service
+2025-11-20 22:00:06,517 - __main__ - INFO - ============================================================
+2025-11-20 22:00:06,517 - __main__ - INFO - Initializing database...
+2025-11-20 22:00:06,517 - data.database - INFO - Initializing database...
+2025-11-20 22:00:06,752 - data.database - INFO - Database initialized successfully
+2025-11-20 22:00:06,752 - __main__ - INFO - Starting queue listener...
+2025-11-20 22:00:06,752 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 22:00:06,752 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 22:00:06,782 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 22:00:06,790 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.172.159.105', 61990), raddr=('34.196.5.176', 5672)>
+2025-11-20 22:00:06,791 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105b31be0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105b31be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 22:00:06,813 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105b31be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:00:06,813 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105b31be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:00:06,813 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105b31be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:00:06,814 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 22:00:06,841 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 22:00:06,842 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 22:00:06,849 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 22:00:09,432 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-20 22:00:09,433 - consumer.queue_listener - INFO - Processing notification: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:00:09,434 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 22:00:09,434 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 22:00:09,435 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:00:09,435 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 22:00:09,435 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-20 22:00:09,461 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-20 22:00:09,472 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-20 22:00:09,472 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-20 22:00:09,574 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:00:09,574 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 1/3)
+2025-11-20 22:00:14,626 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:00:14,626 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 2/3)
+2025-11-20 22:00:19,695 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:00:19,695 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 3/3)
+2025-11-20 22:00:24,744 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:00:24,746 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu after 3 retries
+2025-11-20 22:00:24,746 - email_service.email_service - INFO - Batch email results: 0 successful, 1 failed
+2025-11-20 22:00:24,746 - processor.notification_processor - INFO - Batch 1 complete: 0 sent, 1 failed
+2025-11-20 22:00:24,756 - processor.notification_processor - INFO - No more participants to process
+2025-11-20 22:00:24,756 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 0 emails sent successfully, 1 failed out of 1 total
+2025-11-20 22:00:24,764 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:02:00,697 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-20 22:02:00,699 - consumer.queue_listener - INFO - Processing notification: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:02:00,699 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 22:02:00,699 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 22:02:00,701 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:02:00,701 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 22:02:00,701 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-20 22:02:00,746 - processor.notification_processor - INFO - Step 3: Total participants to process: 2
+2025-11-20 22:02:00,755 - processor.notification_processor - INFO - Step 4: Processing batch 1 (2 participants, offset=0)
+2025-11-20 22:02:00,755 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-20 22:02:00,822 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:02:00,822 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 1/3)
+2025-11-20 22:02:00,831 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com: Server not connected
+2025-11-20 22:02:00,831 - email_service.email_service - INFO - Retrying email to chethanr2000@gmail.com (attempt 1/3)
+2025-11-20 22:02:05,881 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com: Server not connected
+2025-11-20 22:02:05,881 - email_service.email_service - INFO - Retrying email to chethanr2000@gmail.com (attempt 2/3)
+2025-11-20 22:02:05,891 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:02:05,891 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 2/3)
+2025-11-20 22:02:10,940 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com: Server not connected
+2025-11-20 22:02:10,941 - email_service.email_service - INFO - Retrying email to chethanr2000@gmail.com (attempt 3/3)
+2025-11-20 22:02:10,949 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:02:10,949 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 3/3)
+2025-11-20 22:02:16,003 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com: Server not connected
+2025-11-20 22:02:16,003 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com after 3 retries
+2025-11-20 22:02:16,006 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:02:16,007 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu after 3 retries
+2025-11-20 22:02:16,007 - email_service.email_service - INFO - Batch email results: 0 successful, 2 failed
+2025-11-20 22:02:16,007 - processor.notification_processor - INFO - Batch 1 complete: 0 sent, 2 failed
+2025-11-20 22:02:16,014 - processor.notification_processor - INFO - No more participants to process
+2025-11-20 22:02:16,014 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 0 emails sent successfully, 2 failed out of 2 total
+2025-11-20 22:02:16,023 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:08:45,975 - __main__ - INFO - ============================================================
+2025-11-20 22:08:45,975 - __main__ - INFO - Starting Notification Service
+2025-11-20 22:08:45,975 - __main__ - INFO - ============================================================
+2025-11-20 22:08:45,975 - __main__ - INFO - Initializing database...
+2025-11-20 22:08:45,975 - data.database - INFO - Initializing database...
+2025-11-20 22:08:46,613 - data.database - INFO - Database initialized successfully
+2025-11-20 22:08:46,613 - __main__ - INFO - Starting queue listener...
+2025-11-20 22:08:46,613 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 22:08:46,613 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 22:08:46,671 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 22:08:46,678 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.172.159.105', 63827), raddr=('34.196.5.176', 5672)>
+2025-11-20 22:08:46,679 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103af9be0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103af9be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 22:08:46,700 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103af9be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:08:46,700 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103af9be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:08:46,700 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103af9be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:08:46,701 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 22:08:46,722 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 22:08:46,722 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 22:08:46,729 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 22:08:54,274 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-20 22:08:54,275 - consumer.queue_listener - INFO - Processing notification: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:08:54,275 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 22:08:54,276 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 22:08:54,277 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:08:54,277 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 22:08:54,277 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-20 22:08:54,320 - processor.notification_processor - INFO - Step 3: Total participants to process: 2
+2025-11-20 22:08:54,334 - processor.notification_processor - INFO - Step 4: Processing batch 1 (2 participants, offset=0)
+2025-11-20 22:08:54,334 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-20 22:08:54,428 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com: Server not connected
+2025-11-20 22:08:54,428 - email_service.email_service - INFO - Retrying email to chethanr2000@gmail.com (attempt 1/3)
+2025-11-20 22:08:54,431 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:08:54,431 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 1/3)
+2025-11-20 22:08:59,498 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:08:59,498 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 2/3)
+2025-11-20 22:08:59,499 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com: Server not connected
+2025-11-20 22:08:59,499 - email_service.email_service - INFO - Retrying email to chethanr2000@gmail.com (attempt 2/3)
+2025-11-20 22:09:04,561 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:09:04,562 - email_service.email_service - INFO - Retrying email to chetank@umd.edu (attempt 3/3)
+2025-11-20 22:09:04,566 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com: Server not connected
+2025-11-20 22:09:04,566 - email_service.email_service - INFO - Retrying email to chethanr2000@gmail.com (attempt 3/3)
+2025-11-20 22:09:09,627 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com: Server not connected
+2025-11-20 22:09:09,628 - email_service.email_service - ERROR - Failed to send email to chethanr2000@gmail.com after 3 retries
+2025-11-20 22:09:09,633 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu: Server not connected
+2025-11-20 22:09:09,633 - email_service.email_service - ERROR - Failed to send email to chetank@umd.edu after 3 retries
+2025-11-20 22:09:09,633 - email_service.email_service - INFO - Batch email results: 0 successful, 2 failed
+2025-11-20 22:09:09,633 - processor.notification_processor - INFO - Batch 1 complete: 0 sent, 2 failed
+2025-11-20 22:09:09,645 - processor.notification_processor - INFO - No more participants to process
+2025-11-20 22:09:09,645 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 0 emails sent successfully, 2 failed out of 2 total
+2025-11-20 22:09:09,661 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:12:58,331 - __main__ - INFO - ============================================================
+2025-11-20 22:12:58,331 - __main__ - INFO - Starting Notification Service
+2025-11-20 22:12:58,331 - __main__ - INFO - ============================================================
+2025-11-20 22:12:58,331 - __main__ - INFO - Initializing database...
+2025-11-20 22:12:58,331 - data.database - INFO - Initializing database...
+2025-11-20 22:12:58,525 - data.database - INFO - Database initialized successfully
+2025-11-20 22:12:58,525 - __main__ - INFO - Starting queue listener...
+2025-11-20 22:12:58,525 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 22:12:58,525 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 22:12:58,549 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 22:12:58,556 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.172.159.105', 64712), raddr=('34.196.5.176', 5672)>
+2025-11-20 22:12:58,557 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103841be0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103841be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 22:12:59,045 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103841be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:12:59,045 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103841be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:12:59,045 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103841be0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:12:59,046 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 22:12:59,066 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 22:12:59,067 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 22:12:59,074 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 22:13:02,876 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-20 22:13:02,876 - consumer.queue_listener - INFO - Processing notification: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:13:02,876 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 22:13:02,876 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 22:13:02,877 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:13:02,877 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 22:13:02,877 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-20 22:13:02,903 - processor.notification_processor - INFO - Step 3: Total participants to process: 2
+2025-11-20 22:13:02,914 - processor.notification_processor - INFO - Step 4: Processing batch 1 (2 participants, offset=0)
+2025-11-20 22:13:02,915 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-20 22:13:04,093 - email_service.email_service - INFO - Email sent successfully to chethanr2000@gmail.com
+2025-11-20 22:13:04,431 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-20 22:13:04,432 - email_service.email_service - INFO - Batch email results: 2 successful, 0 failed
+2025-11-20 22:13:04,432 - processor.notification_processor - INFO - Batch 1 complete: 2 sent, 0 failed
+2025-11-20 22:13:04,440 - processor.notification_processor - INFO - No more participants to process
+2025-11-20 22:13:04,440 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 2 emails sent successfully, 0 failed out of 2 total
+2025-11-20 22:13:04,449 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 22:55:55,322 - __main__ - INFO - ============================================================
+2025-11-20 22:55:55,322 - __main__ - INFO - Starting Notification Service
+2025-11-20 22:55:55,322 - __main__ - INFO - ============================================================
+2025-11-20 22:55:55,322 - __main__ - INFO - Initializing database...
+2025-11-20 22:55:55,322 - data.database - INFO - Initializing database...
+2025-11-20 22:55:56,165 - data.database - INFO - Database initialized successfully
+2025-11-20 22:55:56,165 - __main__ - INFO - Database initialized successfully
+2025-11-20 22:55:56,165 - __main__ - INFO - Starting reminder scheduler...
+2025-11-20 22:55:56,165 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-20 22:55:56,171 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-20 22:55:56,172 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-20 22:55:56,172 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-20 22:55:56,172 - scheduler.reminder_scheduler - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 22:55:56,172 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 22:55:56,173 - __main__ - INFO - Starting queue listener...
+2025-11-20 22:55:56,173 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 22:55:56,173 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 22:55:56,185 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 22:55:56,191 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.172.159.105', 57091), raddr=('34.196.5.176', 5672)>
+2025-11-20 22:55:56,192 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1044463c0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1044463c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 22:55:56,212 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1044463c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:55:56,212 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1044463c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:55:56,212 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1044463c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 22:55:56,212 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 22:55:56,231 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 22:55:56,231 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 22:55:56,238 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 23:04:07,155 - __main__ - INFO - ============================================================
+2025-11-20 23:04:07,155 - __main__ - INFO - Starting Notification Service
+2025-11-20 23:04:07,155 - __main__ - INFO - ============================================================
+2025-11-20 23:04:07,155 - __main__ - INFO - Initializing database...
+2025-11-20 23:04:07,155 - data.database - INFO - Initializing database...
+2025-11-20 23:04:08,495 - data.database - INFO - Database initialized successfully
+2025-11-20 23:04:08,496 - __main__ - INFO - Database initialized successfully
+2025-11-20 23:04:08,496 - __main__ - INFO - Starting reminder scheduler...
+2025-11-20 23:04:08,496 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-20 23:04:08,502 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-20 23:04:08,503 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-20 23:04:08,503 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-20 23:04:08,503 - scheduler.reminder_scheduler - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:04:08,503 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:04:08,503 - __main__ - INFO - Starting queue listener...
+2025-11-20 23:04:08,503 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 23:04:08,503 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 23:04:08,517 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:04:08,525 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 58842), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:04:08,525 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10422e510>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10422e510> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:04:08,546 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10422e510> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:04:08,546 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10422e510> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:04:08,546 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10422e510> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:04:08,546 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:04:08,567 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 23:04:08,567 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 23:04:08,574 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 23:05:08,508 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:06:08 EST)" (scheduled at 2025-11-20 23:05:08.502134-05:00)
+2025-11-20 23:05:08,510 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:05:08,555 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:06:08 EST)" executed successfully
+2025-11-20 23:06:08,509 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:07:08 EST)" (scheduled at 2025-11-20 23:06:08.502134-05:00)
+2025-11-20 23:06:08,511 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:06:08,563 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:07:08 EST)" executed successfully
+2025-11-20 23:07:08,509 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:08:08 EST)" (scheduled at 2025-11-20 23:07:08.502134-05:00)
+2025-11-20 23:07:08,512 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:07:08,565 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:08:08 EST)" executed successfully
+2025-11-20 23:08:08,507 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:09:08 EST)" (scheduled at 2025-11-20 23:08:08.502134-05:00)
+2025-11-20 23:08:08,509 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:08:08,542 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:09:08 EST)" executed successfully
+2025-11-20 23:09:08,511 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:10:08 EST)" (scheduled at 2025-11-20 23:09:08.502134-05:00)
+2025-11-20 23:09:08,516 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:09:08,554 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:10:08 EST)" executed successfully
+2025-11-20 23:10:08,508 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:11:08 EST)" (scheduled at 2025-11-20 23:10:08.502134-05:00)
+2025-11-20 23:10:08,510 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:10:08,542 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:11:08 EST)" executed successfully
+2025-11-20 23:13:48,860 - __main__ - INFO - ============================================================
+2025-11-20 23:13:48,861 - __main__ - INFO - Starting Notification Service
+2025-11-20 23:13:48,861 - __main__ - INFO - ============================================================
+2025-11-20 23:13:48,861 - __main__ - INFO - Initializing database...
+2025-11-20 23:13:48,861 - data.database - INFO - Initializing database...
+2025-11-20 23:13:49,248 - data.database - INFO - Database initialized successfully
+2025-11-20 23:13:49,249 - __main__ - INFO - Database initialized successfully
+2025-11-20 23:13:49,249 - __main__ - INFO - Starting reminder scheduler...
+2025-11-20 23:13:49,249 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-20 23:13:49,256 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-20 23:13:49,256 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-20 23:13:49,256 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-20 23:13:49,257 - scheduler.reminder_scheduler - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:13:49,257 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:13:49,257 - __main__ - INFO - Starting queue listener...
+2025-11-20 23:13:49,257 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 23:13:49,257 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 23:13:49,276 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:13:49,283 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 60891), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:13:49,284 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108202510>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108202510> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:13:49,304 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108202510> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:13:49,304 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108202510> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:13:49,304 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108202510> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:13:49,304 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:13:49,325 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 23:13:49,325 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 23:13:49,331 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 23:14:49,264 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:15:49 EST)" (scheduled at 2025-11-20 23:14:49.256027-05:00)
+2025-11-20 23:14:49,265 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:14:49,315 - scheduler.reminder_scheduler - INFO - Found 1 pending one-day reminders
+2025-11-20 23:14:49,354 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:14:49,362 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61096), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,365 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082120d0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082120d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:14:49,386 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082120d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:14:49,386 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082120d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:14:49,386 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082120d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:14:49,386 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:14:49,402 - scheduler.queue_publisher - ERROR - Failed to publish reminder for event bd8814f8-5901-44bf-84a2-65041925f4de: Object of type UUID is not JSON serializable
+2025-11-20 23:14:49,402 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082120d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:14:49,408 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082120d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:14:49,408 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:14:49,408 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:14:49,414 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61096), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,415 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61096), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,415 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61096), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,415 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:14:49,415 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:14:49,415 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61096), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,415 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:14:49,424 - scheduler.reminder_scheduler - INFO - Found 1 pending one-hour reminders
+2025-11-20 23:14:49,426 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:14:49,433 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61099), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,434 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108213390>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108213390> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:14:49,455 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108213390> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:14:49,455 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108213390> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:14:49,455 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108213390> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:14:49,455 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:14:49,469 - scheduler.queue_publisher - ERROR - Failed to publish reminder for event bd8814f8-5901-44bf-84a2-65041925f4de: Object of type UUID is not JSON serializable
+2025-11-20 23:14:49,469 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108213390> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:14:49,476 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108213390> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:14:49,476 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:14:49,476 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:14:49,483 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61099), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,483 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61099), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,483 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61099), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,483 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:14:49,483 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:14:49,483 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61099), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:14:49,484 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:14:49,491 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:15:49 EST)" executed successfully
+2025-11-20 23:15:49,261 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:16:49 EST)" (scheduled at 2025-11-20 23:15:49.256027-05:00)
+2025-11-20 23:15:49,264 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:15:49,283 - scheduler.reminder_scheduler - INFO - Found 1 pending one-day reminders
+2025-11-20 23:15:49,299 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:15:49,306 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61299), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,307 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108244c30>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108244c30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:15:49,329 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108244c30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:15:49,329 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108244c30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:15:49,329 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108244c30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:15:49,330 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:15:49,346 - scheduler.queue_publisher - ERROR - Failed to publish reminder for event bd8814f8-5901-44bf-84a2-65041925f4de: Object of type UUID is not JSON serializable
+2025-11-20 23:15:49,346 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108244c30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:15:49,353 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108244c30> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:15:49,353 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:15:49,353 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:15:49,360 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61299), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,360 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61299), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,361 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61299), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,361 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:15:49,361 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:15:49,361 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61299), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,361 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:15:49,369 - scheduler.reminder_scheduler - INFO - Found 1 pending one-hour reminders
+2025-11-20 23:15:49,370 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:15:49,377 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61302), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,378 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108245ba0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108245ba0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:15:49,401 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108245ba0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:15:49,402 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108245ba0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:15:49,402 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108245ba0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:15:49,402 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:15:49,420 - scheduler.queue_publisher - ERROR - Failed to publish reminder for event bd8814f8-5901-44bf-84a2-65041925f4de: Object of type UUID is not JSON serializable
+2025-11-20 23:15:49,420 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108245ba0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:15:49,428 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108245ba0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:15:49,428 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:15:49,428 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:15:49,435 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61302), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,436 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61302), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,436 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61302), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,436 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:15:49,436 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:15:49,436 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61302), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:15:49,436 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:15:49,443 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:16:49 EST)" executed successfully
+2025-11-20 23:16:49,263 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:17:49 EST)" (scheduled at 2025-11-20 23:16:49.256027-05:00)
+2025-11-20 23:16:49,265 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:16:49,307 - scheduler.reminder_scheduler - INFO - Found 1 pending one-day reminders
+2025-11-20 23:16:49,336 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:16:49,344 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61523), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,344 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10820e570>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10820e570> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:16:49,370 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10820e570> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:16:49,370 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10820e570> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:16:49,370 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10820e570> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:16:49,370 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:16:49,385 - scheduler.queue_publisher - ERROR - Failed to publish reminder for event bd8814f8-5901-44bf-84a2-65041925f4de: Object of type UUID is not JSON serializable
+2025-11-20 23:16:49,385 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10820e570> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:16:49,392 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10820e570> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:16:49,392 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:16:49,392 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:16:49,403 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61523), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,403 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61523), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,403 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61523), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,403 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:16:49,403 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:16:49,403 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61523), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,404 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:16:49,414 - scheduler.reminder_scheduler - INFO - Found 1 pending one-hour reminders
+2025-11-20 23:16:49,417 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:16:49,423 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61526), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,424 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082548d0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082548d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:16:49,444 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082548d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:16:49,444 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082548d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:16:49,444 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082548d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:16:49,444 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:16:49,457 - scheduler.queue_publisher - ERROR - Failed to publish reminder for event bd8814f8-5901-44bf-84a2-65041925f4de: Object of type UUID is not JSON serializable
+2025-11-20 23:16:49,457 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082548d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:16:49,532 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1082548d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:16:49,532 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:16:49,532 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:16:49,541 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61526), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,541 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61526), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,541 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61526), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,541 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:16:49,541 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:16:49,541 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61526), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:16:49,541 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:16:49,549 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:17:49 EST)" executed successfully
+2025-11-20 23:17:49,263 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:18:49 EST)" (scheduled at 2025-11-20 23:17:49.256027-05:00)
+2025-11-20 23:17:49,265 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:17:49,290 - scheduler.reminder_scheduler - INFO - Found 1 pending one-day reminders
+2025-11-20 23:17:49,329 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:17:49,337 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61718), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,337 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108255370>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108255370> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:17:49,360 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108255370> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:17:49,360 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108255370> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:17:49,360 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108255370> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:17:49,361 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:17:49,375 - scheduler.queue_publisher - ERROR - Failed to publish reminder for event bd8814f8-5901-44bf-84a2-65041925f4de: Object of type UUID is not JSON serializable
+2025-11-20 23:17:49,375 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108255370> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:17:49,382 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108255370> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:17:49,382 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:17:49,382 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:17:49,390 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61718), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,390 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61718), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,390 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61718), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,390 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:17:49,390 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:17:49,390 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61718), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,390 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:17:49,398 - scheduler.reminder_scheduler - INFO - Found 1 pending one-hour reminders
+2025-11-20 23:17:49,400 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:17:49,407 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61721), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,407 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1081f6b50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1081f6b50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:17:49,428 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1081f6b50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:17:49,428 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1081f6b50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:17:49,428 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1081f6b50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:17:49,428 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:17:49,442 - scheduler.queue_publisher - ERROR - Failed to publish reminder for event bd8814f8-5901-44bf-84a2-65041925f4de: Object of type UUID is not JSON serializable
+2025-11-20 23:17:49,442 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1081f6b50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:17:49,448 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1081f6b50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:17:49,449 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:17:49,449 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:17:49,455 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61721), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,456 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61721), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,456 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61721), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,456 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:17:49,456 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:17:49,456 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 61721), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:17:49,456 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:17:49,464 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:18:49 EST)" executed successfully
+2025-11-20 23:20:11,889 - __main__ - INFO - ============================================================
+2025-11-20 23:20:11,889 - __main__ - INFO - Starting Notification Service
+2025-11-20 23:20:11,889 - __main__ - INFO - ============================================================
+2025-11-20 23:20:11,889 - __main__ - INFO - Initializing database...
+2025-11-20 23:20:11,889 - data.database - INFO - Initializing database...
+2025-11-20 23:20:12,315 - data.database - INFO - Database initialized successfully
+2025-11-20 23:20:12,315 - __main__ - INFO - Database initialized successfully
+2025-11-20 23:20:12,315 - __main__ - INFO - Starting reminder scheduler...
+2025-11-20 23:20:12,315 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-20 23:20:12,324 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-20 23:20:12,325 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-20 23:20:12,325 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-20 23:20:12,326 - scheduler.reminder_scheduler - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:20:12,326 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:20:12,326 - __main__ - INFO - Starting queue listener...
+2025-11-20 23:20:12,326 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 23:20:12,326 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 23:20:12,349 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:20:12,367 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 62144), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:20:12,368 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055323c0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055323c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:20:12,390 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055323c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:20:12,390 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055323c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:20:12,390 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055323c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:20:12,390 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:20:12,412 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 23:20:12,412 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 23:20:12,419 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 23:21:12,333 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:22:12 EST)" (scheduled at 2025-11-20 23:21:12.324321-05:00)
+2025-11-20 23:21:12,338 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:21:12,381 - scheduler.reminder_scheduler - INFO - Found 1 pending one-day reminders
+2025-11-20 23:21:12,428 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:21:12,436 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62244), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,437 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105541d10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105541d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:21:12,468 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105541d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:21:12,468 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105541d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:21:12,468 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105541d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:21:12,469 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:21:12,495 - scheduler.queue_publisher - INFO - Published reminder: event_id=bd8814f8-5901-44bf-84a2-65041925f4de, type=one_day
+2025-11-20 23:21:12,505 - consumer.queue_listener - INFO - Received message: {"type": "event_reminder", "event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "reminder_type": "one_day"}
+2025-11-20 23:21:12,505 - consumer.queue_listener - ERROR - Invalid message format: Missing required field: 'event'
+2025-11-20 23:21:12,516 - scheduler.reminder_scheduler - INFO - Sent one-day reminder for event bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-20 23:21:12,517 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105541d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:21:12,526 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105541d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:21:12,526 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:21:12,526 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:21:12,532 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62244), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,532 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62244), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,532 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62244), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,532 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:21:12,533 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:21:12,533 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62244), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,533 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:21:12,551 - scheduler.reminder_scheduler - INFO - Found 1 pending one-hour reminders
+2025-11-20 23:21:12,554 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:21:12,569 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62247), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,569 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105543250>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105543250> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:21:12,602 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105543250> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:21:12,602 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105543250> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:21:12,602 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105543250> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:21:12,602 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:21:12,618 - scheduler.queue_publisher - INFO - Published reminder: event_id=bd8814f8-5901-44bf-84a2-65041925f4de, type=one_hour
+2025-11-20 23:21:12,627 - consumer.queue_listener - INFO - Received message: {"type": "event_reminder", "event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "reminder_type": "one_hour"}
+2025-11-20 23:21:12,627 - consumer.queue_listener - ERROR - Invalid message format: Missing required field: 'event'
+2025-11-20 23:21:12,635 - scheduler.reminder_scheduler - INFO - Sent one-hour reminder for event bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-20 23:21:12,635 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105543250> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:21:12,644 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105543250> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:21:12,644 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:21:12,644 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:21:12,653 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62247), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,653 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62247), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,653 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62247), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,653 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:21:12,653 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:21:12,653 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 62247), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:21:12,653 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:21:12,653 - scheduler.reminder_scheduler - INFO - Reminder check complete: 1 one-day, 1 one-hour reminders sent
+2025-11-20 23:21:12,653 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:22:12 EST)" executed successfully
+2025-11-20 23:22:12,332 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:23:12 EST)" (scheduled at 2025-11-20 23:22:12.324321-05:00)
+2025-11-20 23:22:12,334 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:22:12,386 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:23:12 EST)" executed successfully
+2025-11-20 23:24:28,245 - __main__ - INFO - ============================================================
+2025-11-20 23:24:28,246 - __main__ - INFO - Starting Notification Service
+2025-11-20 23:24:28,246 - __main__ - INFO - ============================================================
+2025-11-20 23:24:28,246 - __main__ - INFO - Initializing database...
+2025-11-20 23:24:28,246 - data.database - INFO - Initializing database...
+2025-11-20 23:24:28,630 - data.database - INFO - Database initialized successfully
+2025-11-20 23:24:28,631 - __main__ - INFO - Database initialized successfully
+2025-11-20 23:24:28,631 - __main__ - INFO - Starting reminder scheduler...
+2025-11-20 23:24:28,631 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-20 23:24:28,637 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-20 23:24:28,637 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-20 23:24:28,638 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-20 23:24:28,638 - scheduler.reminder_scheduler - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:24:28,638 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:24:28,638 - __main__ - INFO - Starting queue listener...
+2025-11-20 23:24:28,638 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 23:24:28,638 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 23:24:28,638 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 23:24:28,638 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 23:24:29,459 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:24:29,467 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 62755), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:24:29,467 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10474a660>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10474a660> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:24:29,514 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10474a660> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:24:29,514 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10474a660> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:24:29,514 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10474a660> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:24:29,515 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:24:29,546 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 23:24:29,546 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 23:24:29,553 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 23:25:12,805 - __main__ - INFO - ============================================================
+2025-11-20 23:25:12,805 - __main__ - INFO - Starting Notification Service
+2025-11-20 23:25:12,805 - __main__ - INFO - ============================================================
+2025-11-20 23:25:12,805 - __main__ - INFO - Initializing database...
+2025-11-20 23:25:12,805 - data.database - INFO - Initializing database...
+2025-11-20 23:25:13,176 - data.database - INFO - Database initialized successfully
+2025-11-20 23:25:13,176 - __main__ - INFO - Database initialized successfully
+2025-11-20 23:25:13,176 - __main__ - INFO - Starting reminder scheduler...
+2025-11-20 23:25:13,176 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-20 23:25:13,181 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-20 23:25:13,182 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-20 23:25:13,182 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-20 23:25:13,182 - scheduler.reminder_scheduler - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:25:13,182 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:25:13,182 - __main__ - INFO - Starting queue listener...
+2025-11-20 23:25:13,182 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 23:25:13,182 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 23:25:13,182 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 23:25:13,182 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 23:25:13,198 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:25:13,204 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 62899), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:25:13,205 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10634a660>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10634a660> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:25:13,227 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10634a660> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:25:13,227 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10634a660> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:25:13,227 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x10634a660> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:25:13,227 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:25:13,248 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 23:25:13,248 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 23:25:13,254 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 23:26:13,186 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:27:13 EST)" (scheduled at 2025-11-20 23:26:13.181205-05:00)
+2025-11-20 23:26:13,188 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:26:13,212 - scheduler.reminder_scheduler - INFO - Found 1 pending one-day reminders
+2025-11-20 23:26:13,221 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:26:13,237 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 63115), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:26:13,238 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106359d10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106359d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:26:13,279 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106359d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:26:13,279 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106359d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:26:13,279 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106359d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:26:13,279 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:26:13,311 - scheduler.queue_publisher - INFO - Published reminder: event_id=bd8814f8-5901-44bf-84a2-65041925f4de, type=one_day
+2025-11-20 23:26:13,318 - consumer.queue_listener - INFO - Received message: {"type": "event_reminder", "event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "reminder_type": "one_day"}
+2025-11-20 23:26:13,332 - scheduler.reminder_scheduler - INFO - Sent one-day reminder for event bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-20 23:26:13,332 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106359d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:26:13,334 - consumer.queue_listener - INFO - Enriched reminder message with event details
+2025-11-20 23:26:13,339 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x106359d10> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:26:13,339 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:26:13,339 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:26:13,343 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 23:26:13,343 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 23:26:13,343 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_reminder
+2025-11-20 23:26:13,346 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 63115), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:26:13,347 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 63115), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:26:13,347 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 63115), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:26:13,347 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:26:13,348 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:26:13,348 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 63115), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:26:13,348 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:26:13,357 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-20 23:26:13,367 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-20 23:26:13,367 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-20 23:26:13,373 - scheduler.reminder_scheduler - INFO - Reminder check complete: 1 one-day, 0 one-hour reminders sent
+2025-11-20 23:26:13,374 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: interval[0:01:00], next run at: 2025-11-20 23:27:13 EST)" executed successfully
+2025-11-20 23:26:14,551 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-20 23:26:14,552 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-20 23:26:14,552 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-20 23:26:14,560 - processor.notification_processor - INFO - No more participants to process
+2025-11-20 23:26:14,560 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-20 23:26:14,569 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 23:37:46,848 - __main__ - INFO - ============================================================
+2025-11-20 23:37:46,848 - __main__ - INFO - Starting Notification Service
+2025-11-20 23:37:46,848 - __main__ - INFO - ============================================================
+2025-11-20 23:37:46,848 - __main__ - INFO - Initializing database...
+2025-11-20 23:37:46,848 - data.database - INFO - Initializing database...
+2025-11-20 23:37:47,733 - data.database - INFO - Database initialized successfully
+2025-11-20 23:37:47,733 - __main__ - INFO - Database initialized successfully
+2025-11-20 23:37:47,733 - __main__ - INFO - Starting reminder scheduler...
+2025-11-20 23:37:47,733 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-20 23:37:47,741 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-20 23:37:47,742 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-20 23:37:47,742 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-20 23:37:47,743 - scheduler.reminder_scheduler - INFO - Reminder scheduler started with cron: * * * * *
+2025-11-20 23:37:47,743 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:37:47,743 - __main__ - INFO - Starting queue listener...
+2025-11-20 23:37:47,743 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 23:37:47,743 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 23:37:47,743 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 23:37:47,743 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 23:37:47,762 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:37:47,769 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 49172), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:37:47,769 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f4f380>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f4f380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:37:47,790 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f4f380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:37:47,790 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f4f380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:37:47,790 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f4f380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:37:47,790 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:37:47,810 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 23:37:47,810 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 23:37:47,817 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 23:38:00,005 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:39:00 EST)" (scheduled at 2025-11-20 23:38:00-05:00)
+2025-11-20 23:38:00,005 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:38:00,046 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:39:00 EST)" executed successfully
+2025-11-20 23:38:20,301 - __main__ - INFO - ============================================================
+2025-11-20 23:38:20,301 - __main__ - INFO - Starting Notification Service
+2025-11-20 23:38:20,301 - __main__ - INFO - ============================================================
+2025-11-20 23:38:20,301 - __main__ - INFO - Initializing database...
+2025-11-20 23:38:20,301 - data.database - INFO - Initializing database...
+2025-11-20 23:38:20,627 - data.database - INFO - Database initialized successfully
+2025-11-20 23:38:20,627 - __main__ - INFO - Database initialized successfully
+2025-11-20 23:38:20,627 - __main__ - INFO - Starting reminder scheduler...
+2025-11-20 23:38:20,627 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-20 23:38:20,632 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-20 23:38:20,633 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-20 23:38:20,633 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-20 23:38:20,633 - scheduler.reminder_scheduler - INFO - Reminder scheduler started with cron: * * * * *
+2025-11-20 23:38:20,634 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-20 23:38:20,634 - __main__ - INFO - Starting queue listener...
+2025-11-20 23:38:20,634 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-20 23:38:20,634 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-20 23:38:20,634 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-20 23:38:20,634 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-20 23:38:20,640 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:38:20,648 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 49296), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:38:20,648 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e4f380>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e4f380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:38:20,672 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e4f380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:38:20,672 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e4f380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:38:20,672 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e4f380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:38:20,672 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:38:20,695 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-20 23:38:20,695 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-20 23:38:20,703 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-20 23:39:00,007 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:40:00 EST)" (scheduled at 2025-11-20 23:39:00-05:00)
+2025-11-20 23:39:00,008 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:39:00 EST)" (scheduled at 2025-11-20 23:39:00-05:00)
+2025-11-20 23:39:00,009 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:39:00,009 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:39:00,048 - scheduler.reminder_scheduler - INFO - Found 1 pending one-hour reminders
+2025-11-20 23:39:00,059 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:39:00,059 - scheduler.reminder_scheduler - INFO - Found 1 pending one-hour reminders
+2025-11-20 23:39:00,065 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49443), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,067 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f5f110>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f5f110> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:39:00,067 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-20 23:39:00,075 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49446), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,078 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e5ead0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e5ead0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-20 23:39:00,090 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f5f110> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:39:00,091 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f5f110> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:39:00,091 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f5f110> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:39:00,091 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:39:00,097 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e5ead0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:39:00,097 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e5ead0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:39:00,097 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e5ead0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-20 23:39:00,097 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-20 23:39:00,105 - scheduler.queue_publisher - INFO - Published reminder: event_id=bd8814f8-5901-44bf-84a2-65041925f4de, type=one_hour
+2025-11-20 23:39:00,109 - scheduler.queue_publisher - INFO - Published reminder: event_id=bd8814f8-5901-44bf-84a2-65041925f4de, type=one_hour
+2025-11-20 23:39:00,112 - consumer.queue_listener - INFO - Received message: {"type": "event_reminder", "event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "reminder_type": "one_hour"}
+2025-11-20 23:39:00,116 - consumer.queue_listener - INFO - Received message: {"type": "event_reminder", "event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "reminder_type": "one_hour"}
+2025-11-20 23:39:00,122 - scheduler.reminder_scheduler - INFO - Sent one-hour reminder for event bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-20 23:39:00,122 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f5f110> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:39:00,128 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x104f5f110> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:39:00,129 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:39:00,129 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:39:00,129 - scheduler.reminder_scheduler - INFO - Sent one-hour reminder for event bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-20 23:39:00,129 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e5ead0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:39:00,136 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103e5ead0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-20 23:39:00,136 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-20 23:39:00,136 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-20 23:39:00,136 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49443), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,136 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49443), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,136 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49443), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,136 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:39:00,136 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:39:00,136 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49443), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,137 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:39:00,137 - scheduler.reminder_scheduler - INFO - Reminder check complete: 0 one-day, 1 one-hour reminders sent
+2025-11-20 23:39:00,137 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:40:00 EST)" executed successfully
+2025-11-20 23:39:00,140 - consumer.queue_listener - INFO - Enriched reminder message with event details
+2025-11-20 23:39:00,142 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49446), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,142 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49446), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,142 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49446), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,143 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:39:00,143 - consumer.queue_listener - INFO - Enriched reminder message with event details
+2025-11-20 23:39:00,143 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-20 23:39:00,144 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 49446), raddr=('34.196.5.176', 5672)>
+2025-11-20 23:39:00,144 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-20 23:39:00,144 - scheduler.reminder_scheduler - INFO - Reminder check complete: 0 one-day, 1 one-hour reminders sent
+2025-11-20 23:39:00,144 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:40:00 EST)" executed successfully
+2025-11-20 23:39:00,149 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 23:39:00,150 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 23:39:00,150 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_reminder
+2025-11-20 23:39:00,152 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 23:39:00,152 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 23:39:00,152 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_reminder
+2025-11-20 23:39:00,165 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-20 23:39:00,169 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-20 23:39:00,174 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-20 23:39:00,174 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-20 23:39:00,179 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-20 23:39:00,179 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-20 23:39:01,325 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-20 23:39:01,326 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-20 23:39:01,326 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-20 23:39:01,334 - processor.notification_processor - INFO - No more participants to process
+2025-11-20 23:39:01,334 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-20 23:39:01,342 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 23:39:01,649 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-20 23:39:01,649 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-20 23:39:01,649 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-20 23:39:01,658 - processor.notification_processor - INFO - No more participants to process
+2025-11-20 23:39:01,658 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-20 23:39:01,669 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 23:39:17,381 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-20 23:39:17,383 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 23:39:17,383 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-20 23:39:17,383 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-20 23:39:17,399 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-20 23:39:17,407 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-20 23:39:17,408 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-20 23:39:18,985 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-20 23:39:18,986 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-20 23:39:18,986 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-20 23:39:18,993 - processor.notification_processor - INFO - No more participants to process
+2025-11-20 23:39:18,993 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-20 23:39:19,002 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-20 23:40:00,027 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:41:00 EST)" (scheduled at 2025-11-20 23:40:00-05:00)
+2025-11-20 23:40:00,030 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:40:00,070 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:41:00 EST)" executed successfully
+2025-11-20 23:41:00,016 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:42:00 EST)" (scheduled at 2025-11-20 23:41:00-05:00)
+2025-11-20 23:41:00,017 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:41:00,055 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:42:00 EST)" executed successfully
+2025-11-20 23:42:00,014 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:43:00 EST)" (scheduled at 2025-11-20 23:42:00-05:00)
+2025-11-20 23:42:00,016 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:42:00,055 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:43:00 EST)" executed successfully
+2025-11-20 23:43:00,015 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:44:00 EST)" (scheduled at 2025-11-20 23:43:00-05:00)
+2025-11-20 23:43:00,017 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:43:00,050 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:44:00 EST)" executed successfully
+2025-11-20 23:44:00,029 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:45:00 EST)" (scheduled at 2025-11-20 23:44:00-05:00)
+2025-11-20 23:44:00,030 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-20 23:44:00,065 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-20 23:45:00 EST)" executed successfully
+2025-11-21 00:06:44,364 - __main__ - INFO - ============================================================
+2025-11-21 00:06:44,365 - __main__ - INFO - Starting Notification Service
+2025-11-21 00:06:44,365 - __main__ - INFO - ============================================================
+2025-11-21 00:06:44,365 - __main__ - INFO - Initializing database...
+2025-11-21 00:06:44,365 - data.database - INFO - Initializing database...
+2025-11-21 00:06:45,920 - data.database - INFO - Database initialized successfully
+2025-11-21 00:06:45,921 - __main__ - INFO - Database initialized successfully
+2025-11-21 00:06:45,921 - __main__ - INFO - Starting reminder scheduler...
+2025-11-21 00:06:45,921 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-21 00:06:45,926 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-21 00:06:45,927 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-21 00:06:45,927 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-21 00:06:45,927 - scheduler.reminder_scheduler - INFO - Reminder scheduler started with cron: * * * * *
+2025-11-21 00:06:45,927 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-21 00:06:45,927 - __main__ - INFO - Starting queue listener...
+2025-11-21 00:06:45,927 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-21 00:06:45,927 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-21 00:06:45,927 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-21 00:06:45,927 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-21 00:06:45,951 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-21 00:06:45,957 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 55440), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:06:45,958 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a14b4d0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a14b4d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-21 00:06:45,979 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a14b4d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:06:45,979 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a14b4d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:06:45,979 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a14b4d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:06:45,979 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-21 00:06:46,001 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-21 00:06:46,001 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-21 00:06:46,007 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-21 00:06:46,012 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-21 00:06:46,013 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:06:46,013 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-21 00:06:46,013 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-21 00:06:46,033 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-21 00:06:46,044 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-21 00:06:46,044 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-21 00:06:47,248 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-21 00:06:47,249 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-21 00:06:47,249 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-21 00:06:47,264 - processor.notification_processor - INFO - No more participants to process
+2025-11-21 00:06:47,264 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-21 00:06:47,273 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:06:47,279 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-21 00:06:47,280 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:06:47,280 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-21 00:06:47,280 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-21 00:06:47,295 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-21 00:06:47,304 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-21 00:06:47,304 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-21 00:06:48,571 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-21 00:06:48,572 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-21 00:06:48,572 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-21 00:06:48,582 - processor.notification_processor - INFO - No more participants to process
+2025-11-21 00:06:48,582 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-21 00:06:48,593 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:06:48,599 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-21 00:06:48,599 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:06:48,600 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-21 00:06:48,600 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-21 00:06:48,615 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-21 00:06:48,623 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-21 00:06:48,623 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-21 00:06:49,634 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-21 00:06:49,635 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-21 00:06:49,636 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-21 00:06:49,644 - processor.notification_processor - INFO - No more participants to process
+2025-11-21 00:06:49,644 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-21 00:06:49,654 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:07:00,010 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-21 00:07:00 EST)" (scheduled at 2025-11-21 00:07:00-05:00)
+2025-11-21 00:07:00,020 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-21 00:07:00,039 - scheduler.reminder_scheduler - INFO - Found 1 pending one-day reminders
+2025-11-21 00:07:00,043 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-21 00:07:00,050 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55489), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,050 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a15b890>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a15b890> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-21 00:07:00,070 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a15b890> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:07:00,070 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a15b890> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:07:00,070 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a15b890> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:07:00,070 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-21 00:07:00,082 - scheduler.queue_publisher - INFO - Published reminder: event_id=bd8814f8-5901-44bf-84a2-65041925f4de, type=one_day
+2025-11-21 00:07:00,088 - consumer.queue_listener - INFO - Received message: {"type": "event_reminder", "event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "reminder_type": "one_day"}
+2025-11-21 00:07:00,105 - consumer.queue_listener - INFO - Enriched reminder message with event details
+2025-11-21 00:07:00,113 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:07:00,113 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-21 00:07:00,113 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_reminder
+2025-11-21 00:07:00,127 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-21 00:07:00,136 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-21 00:07:00,136 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-21 00:07:00,168 - scheduler.reminder_scheduler - INFO - Sent one-day reminder for event bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-21 00:07:00,168 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a15b890> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-21 00:07:00,174 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a15b890> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-21 00:07:00,175 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-21 00:07:00,175 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-21 00:07:00,180 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55489), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,181 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55489), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,181 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55489), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,181 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-21 00:07:00,181 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-21 00:07:00,181 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55489), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,181 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-21 00:07:00,196 - scheduler.reminder_scheduler - INFO - Found 1 pending one-hour reminders
+2025-11-21 00:07:00,198 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-21 00:07:00,204 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55493), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,204 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a1b02d0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a1b02d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-21 00:07:00,224 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a1b02d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:07:00,224 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a1b02d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:07:00,224 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a1b02d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:07:00,224 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-21 00:07:00,236 - scheduler.queue_publisher - INFO - Published reminder: event_id=bd8814f8-5901-44bf-84a2-65041925f4de, type=one_hour
+2025-11-21 00:07:00,252 - scheduler.reminder_scheduler - INFO - Sent one-hour reminder for event bd8814f8-5901-44bf-84a2-65041925f4de
+2025-11-21 00:07:00,252 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a1b02d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-21 00:07:00,259 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x11a1b02d0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-11-21 00:07:00,259 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-11-21 00:07:00,259 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-11-21 00:07:00,268 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55493), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,268 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55493), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,268 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55493), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,268 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-21 00:07:00,268 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-11-21 00:07:00,268 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('10.172.159.105', 55493), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:07:00,269 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-11-21 00:07:00,269 - scheduler.reminder_scheduler - INFO - Reminder check complete: 1 one-day, 1 one-hour reminders sent
+2025-11-21 00:07:00,269 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-21 00:08:00 EST)" executed successfully
+2025-11-21 00:07:01,132 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-21 00:07:01,132 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-21 00:07:01,132 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-21 00:07:01,140 - processor.notification_processor - INFO - No more participants to process
+2025-11-21 00:07:01,140 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-21 00:07:01,150 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:07:01,155 - consumer.queue_listener - INFO - Received message: {"type": "event_reminder", "event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "reminder_type": "one_hour"}
+2025-11-21 00:07:01,171 - consumer.queue_listener - INFO - Enriched reminder message with event details
+2025-11-21 00:07:01,180 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:07:01,180 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-21 00:07:01,180 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_reminder
+2025-11-21 00:07:01,194 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-21 00:07:01,205 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-21 00:07:01,205 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-21 00:07:02,189 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-21 00:07:02,189 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-21 00:07:02,190 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-21 00:07:02,200 - processor.notification_processor - INFO - No more participants to process
+2025-11-21 00:07:02,200 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-21 00:07:02,215 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_reminder, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:08:00,027 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-21 00:09:00 EST)" (scheduled at 2025-11-21 00:08:00-05:00)
+2025-11-21 00:08:00,031 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-21 00:08:00,064 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-21 00:09:00 EST)" executed successfully
+2025-11-21 00:09:00,013 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-21 00:10:00 EST)" (scheduled at 2025-11-21 00:09:00-05:00)
+2025-11-21 00:09:00,017 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-21 00:09:00,053 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-21 00:10:00 EST)" executed successfully
+2025-11-21 00:23:24,587 - __main__ - INFO - ============================================================
+2025-11-21 00:23:24,587 - __main__ - INFO - Starting Notification Service
+2025-11-21 00:23:24,587 - __main__ - INFO - ============================================================
+2025-11-21 00:23:24,587 - __main__ - INFO - Initializing database...
+2025-11-21 00:23:24,587 - data.database - INFO - Initializing database...
+2025-11-21 00:23:25,507 - data.database - INFO - Database initialized successfully
+2025-11-21 00:23:25,507 - __main__ - INFO - Database initialized successfully
+2025-11-21 00:23:25,507 - __main__ - INFO - Starting reminder scheduler...
+2025-11-21 00:23:25,507 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-11-21 00:23:25,519 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-11-21 00:23:25,520 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-11-21 00:23:25,520 - apscheduler.scheduler - INFO - Scheduler started
+2025-11-21 00:23:25,520 - scheduler.reminder_scheduler - INFO - Reminder scheduler started with cron: * * * * *
+2025-11-21 00:23:25,521 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-11-21 00:23:25,521 - __main__ - INFO - Starting queue listener...
+2025-11-21 00:23:25,521 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-11-21 00:23:25,521 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-11-21 00:23:25,521 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-11-21 00:23:25,521 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-11-21 00:23:25,575 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-11-21 00:23:25,582 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.172.159.105', 58999), raddr=('34.196.5.176', 5672)>
+2025-11-21 00:23:25,583 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105cf7380>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105cf7380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-11-21 00:23:25,601 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105cf7380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:23:25,601 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105cf7380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:23:25,601 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105cf7380> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-11-21 00:23:25,602 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-11-21 00:23:25,619 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-11-21 00:23:25,619 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-11-21 00:23:25,625 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-11-21 00:23:30,150 - consumer.queue_listener - INFO - Received message: {"type": "event_updated", "event": {"event_id": "bd8814f8-5901-44bf-84a2-65041925f4de", "event_name": "Sagar Wagh Amazon DynamoDB Lecture Please Attend 2", "description": null, "start_time": "2025-11-21T18:57:00", "end_time": "2025-11-21T18:59:00", "organizer_id": "3827df91-2d63-4f87-865d-0dff20893db5", "location": "12", "remaining_seats": 2}}
+2025-11-21 00:23:30,152 - processor.notification_processor - INFO - Processing message: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:23:30,152 - processor.notification_processor - INFO - Step 1: Extracted event_type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2
+2025-11-21 00:23:30,152 - processor.notification_processor - INFO - Step 2: Loaded template for event_type=event_updated
+2025-11-21 00:23:30,177 - processor.notification_processor - INFO - Step 3: Total participants to process: 1
+2025-11-21 00:23:30,188 - processor.notification_processor - INFO - Step 4: Processing batch 1 (1 participants, offset=0)
+2025-11-21 00:23:30,188 - processor.notification_processor - INFO - Sending emails for batch 1...
+2025-11-21 00:23:31,739 - email_service.email_service - INFO - Email sent successfully to chetank@umd.edu
+2025-11-21 00:23:31,740 - email_service.email_service - INFO - Batch email results: 1 successful, 0 failed
+2025-11-21 00:23:31,740 - processor.notification_processor - INFO - Batch 1 complete: 1 sent, 0 failed
+2025-11-21 00:23:31,747 - processor.notification_processor - INFO - No more participants to process
+2025-11-21 00:23:31,747 - processor.notification_processor - INFO - Processing complete for event_id=bd8814f8-5901-44bf-84a2-65041925f4de: 1 emails sent successfully, 0 failed out of 1 total
+2025-11-21 00:23:31,755 - consumer.queue_listener - INFO - Message processed and acknowledged: NotificationMessage(type=event_updated, event_id=bd8814f8-5901-44bf-84a2-65041925f4de, event_name=Sagar Wagh Amazon DynamoDB Lecture Please Attend 2)
+2025-11-21 00:24:00,007 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-21 00:25:00 EST)" (scheduled at 2025-11-21 00:24:00-05:00)
+2025-11-21 00:24:00,010 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-11-21 00:24:00,050 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-11-21 00:25:00 EST)" executed successfully
