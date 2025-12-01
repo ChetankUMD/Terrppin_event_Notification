@@ -52777,3 +52777,325 @@ OSError: [Errno 9] Bad file descriptor
 2025-12-01 18:06:00,022 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:07:00 EST)" (scheduled at 2025-12-01 18:06:00-05:00)
 2025-12-01 18:06:00,023 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
 2025-12-01 18:06:00,077 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:07:00 EST)" executed successfully
+2025-12-01 18:07:00,009 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:08:00 EST)" (scheduled at 2025-12-01 18:07:00-05:00)
+2025-12-01 18:07:00,014 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:07:00,063 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:08:00 EST)" executed successfully
+2025-12-01 18:08:00,005 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:09:00 EST)" (scheduled at 2025-12-01 18:08:00-05:00)
+2025-12-01 18:08:00,009 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:08:00,064 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:09:00 EST)" executed successfully
+2025-12-01 18:09:00,005 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:10:00 EST)" (scheduled at 2025-12-01 18:09:00-05:00)
+2025-12-01 18:09:00,007 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:09:00,058 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:10:00 EST)" executed successfully
+2025-12-01 18:10:00,020 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:11:00 EST)" (scheduled at 2025-12-01 18:10:00-05:00)
+2025-12-01 18:10:00,021 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:10:00,061 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:11:00 EST)" executed successfully
+2025-12-01 18:10:25,135 - consumer.queue_listener - INFO - Received signal 2, initiating graceful shutdown...
+2025-12-01 18:10:25,136 - consumer.queue_listener - INFO - Stopping queue listener...
+2025-12-01 18:10:25,145 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103b878c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-01 18:10:25,154 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x103b878c0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-01 18:10:25,154 - consumer.queue_listener - INFO - Channel closed
+2025-12-01 18:10:25,154 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-12-01 18:10:25,154 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-12-01 18:10:25,161 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.3.13.144', 55678), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:25,161 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.3.13.144', 55678), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:25,162 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.3.13.144', 55678), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:25,162 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-01 18:10:25,162 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-01 18:10:25,162 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=11, family=2, type=1, proto=6, laddr=('10.3.13.144', 55678), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:25,163 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-12-01 18:10:25,163 - consumer.queue_listener - INFO - Connection closed
+2025-12-01 18:10:25,163 - consumer.queue_listener - INFO - Queue listener stopped
+2025-12-01 18:10:25,163 - consumer.queue_listener - ERROR - Error in consumer: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/consumer/queue_listener.py", line 184, in start
+    self.channel.start_consuming()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 514, in _flush_output
+    self._impl.ioloop.poll()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 579, in poll
+    self._poller.poll()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 1064, in poll
+    kevents = self._kqueue.control(None, 1000, self._get_max_wait())
+OSError: [Errno 9] Bad file descriptor
+2025-12-01 18:10:25,170 - __main__ - ERROR - Fatal error: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/run.py", line 78, in main
+    listener.start()
+    ~~~~~~~~~~~~~~^^
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/consumer/queue_listener.py", line 184, in start
+    self.channel.start_consuming()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 514, in _flush_output
+    self._impl.ioloop.poll()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 579, in poll
+    self._poller.poll()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 1064, in poll
+    kevents = self._kqueue.control(None, 1000, self._get_max_wait())
+OSError: [Errno 9] Bad file descriptor
+2025-12-01 18:10:25,171 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-01 18:10:25,171 - scheduler.reminder_scheduler - INFO - Reminder scheduler stopped
+2025-12-01 18:10:25,171 - __main__ - INFO - ============================================================
+2025-12-01 18:10:25,171 - __main__ - INFO - Notification Service Stopped
+2025-12-01 18:10:25,171 - __main__ - INFO - ============================================================
+2025-12-01 18:10:25,202 - asyncio - ERROR - Future exception was never retrieved
+future: <Future finished exception=SMTPServerDisconnected('Connection lost')>
+aiosmtplib.errors.SMTPServerDisconnected: Connection lost
+2025-12-01 18:10:25,202 - asyncio - ERROR - Future exception was never retrieved
+future: <Future finished exception=SMTPServerDisconnected('Connection lost')>
+aiosmtplib.errors.SMTPServerDisconnected: Connection lost
+2025-12-01 18:10:25,202 - asyncio - ERROR - Future exception was never retrieved
+future: <Future finished exception=SMTPServerDisconnected('Connection lost')>
+aiosmtplib.errors.SMTPServerDisconnected: Connection lost
+2025-12-01 18:10:27,231 - __main__ - INFO - ============================================================
+2025-12-01 18:10:27,231 - __main__ - INFO - Starting Notification Service
+2025-12-01 18:10:27,231 - __main__ - INFO - ============================================================
+2025-12-01 18:10:27,231 - __main__ - INFO - Initializing database...
+2025-12-01 18:10:27,231 - data.database - INFO - Initializing database...
+2025-12-01 18:10:27,461 - data.database - INFO - Database initialized successfully
+2025-12-01 18:10:27,461 - __main__ - INFO - Database initialized successfully
+2025-12-01 18:10:27,461 - __main__ - INFO - Starting reminder scheduler...
+2025-12-01 18:10:27,461 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-12-01 18:10:27,468 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-01 18:10:27,469 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-12-01 18:10:27,469 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-01 18:10:27,469 - scheduler.reminder_scheduler - INFO - Reminder scheduler started with cron: * * * * *
+2025-12-01 18:10:27,469 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-12-01 18:10:27,469 - __main__ - INFO - Starting queue listener...
+2025-12-01 18:10:27,469 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-12-01 18:10:27,469 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-12-01 18:10:27,469 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-12-01 18:10:27,469 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-12-01 18:10:27,487 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-12-01 18:10:27,494 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56600), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:27,494 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055d0d70>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055d0d70> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-12-01 18:10:27,517 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055d0d70> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-01 18:10:27,518 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055d0d70> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-01 18:10:27,518 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055d0d70> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-01 18:10:27,518 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-12-01 18:10:27,547 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-12-01 18:10:27,547 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-12-01 18:10:27,558 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-12-01 18:10:33,115 - consumer.queue_listener - INFO - Received signal 2, initiating graceful shutdown...
+2025-12-01 18:10:33,116 - consumer.queue_listener - INFO - Stopping queue listener...
+2025-12-01 18:10:33,541 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055d0d70> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-01 18:10:33,548 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x1055d0d70> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-01 18:10:33,549 - consumer.queue_listener - INFO - Channel closed
+2025-12-01 18:10:33,549 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-12-01 18:10:33,549 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-12-01 18:10:33,558 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56600), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:33,558 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56600), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:33,558 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56600), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:33,559 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-01 18:10:33,559 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-01 18:10:33,560 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56600), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:33,560 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-12-01 18:10:33,560 - consumer.queue_listener - INFO - Connection closed
+2025-12-01 18:10:33,561 - consumer.queue_listener - INFO - Queue listener stopped
+2025-12-01 18:10:33,561 - consumer.queue_listener - ERROR - Error in consumer: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/consumer/queue_listener.py", line 184, in start
+    self.channel.start_consuming()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 514, in _flush_output
+    self._impl.ioloop.poll()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 579, in poll
+    self._poller.poll()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 1064, in poll
+    kevents = self._kqueue.control(None, 1000, self._get_max_wait())
+OSError: [Errno 9] Bad file descriptor
+2025-12-01 18:10:33,567 - __main__ - ERROR - Fatal error: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/run.py", line 78, in main
+    listener.start()
+    ~~~~~~~~~~~~~~^^
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/consumer/queue_listener.py", line 184, in start
+    self.channel.start_consuming()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 514, in _flush_output
+    self._impl.ioloop.poll()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 579, in poll
+    self._poller.poll()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 1064, in poll
+    kevents = self._kqueue.control(None, 1000, self._get_max_wait())
+OSError: [Errno 9] Bad file descriptor
+2025-12-01 18:10:33,569 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-01 18:10:33,570 - scheduler.reminder_scheduler - INFO - Reminder scheduler stopped
+2025-12-01 18:10:33,570 - __main__ - INFO - ============================================================
+2025-12-01 18:10:33,570 - __main__ - INFO - Notification Service Stopped
+2025-12-01 18:10:33,570 - __main__ - INFO - ============================================================
+2025-12-01 18:10:39,355 - __main__ - INFO - ============================================================
+2025-12-01 18:10:39,355 - __main__ - INFO - Starting Notification Service
+2025-12-01 18:10:39,355 - __main__ - INFO - ============================================================
+2025-12-01 18:10:39,355 - __main__ - INFO - Initializing database...
+2025-12-01 18:10:39,355 - data.database - INFO - Initializing database...
+2025-12-01 18:10:39,556 - data.database - INFO - Database initialized successfully
+2025-12-01 18:10:39,556 - __main__ - INFO - Database initialized successfully
+2025-12-01 18:10:39,556 - __main__ - INFO - Starting reminder scheduler...
+2025-12-01 18:10:39,556 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-12-01 18:10:39,561 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-01 18:10:39,562 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-12-01 18:10:39,562 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-01 18:10:39,562 - scheduler.reminder_scheduler - INFO - Reminder scheduler started with cron: * * * * *
+2025-12-01 18:10:39,562 - __main__ - INFO - Reminder scheduler started (runs every 1 minute)
+2025-12-01 18:10:39,563 - __main__ - INFO - Starting queue listener...
+2025-12-01 18:10:39,563 - email_service.email_service - INFO - Email service initialized with SMTP: smtp.gmail.com:587
+2025-12-01 18:10:39,563 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-12-01 18:10:39,563 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-12-01 18:10:39,563 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-12-01 18:10:39,570 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-12-01 18:10:39,576 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56622), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:10:39,577 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108124ad0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108124ad0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-12-01 18:10:39,601 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108124ad0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-01 18:10:39,601 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108124ad0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-01 18:10:39,601 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108124ad0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-01 18:10:39,601 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-12-01 18:10:39,622 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-12-01 18:10:39,622 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-12-01 18:10:39,630 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-12-01 18:11:00,006 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:12:00 EST)" (scheduled at 2025-12-01 18:11:00-05:00)
+2025-12-01 18:11:00,008 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:11:00,072 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:12:00 EST)" executed successfully
+2025-12-01 18:12:00,023 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:13:00 EST)" (scheduled at 2025-12-01 18:12:00-05:00)
+2025-12-01 18:12:00,035 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:12:00,103 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:13:00 EST)" executed successfully
+2025-12-01 18:13:00,006 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:14:00 EST)" (scheduled at 2025-12-01 18:13:00-05:00)
+2025-12-01 18:13:00,008 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:13:00,059 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:14:00 EST)" executed successfully
+2025-12-01 18:14:00,017 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:15:00 EST)" (scheduled at 2025-12-01 18:14:00-05:00)
+2025-12-01 18:14:00,024 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:14:00,076 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:15:00 EST)" executed successfully
+2025-12-01 18:15:00,017 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:16:00 EST)" (scheduled at 2025-12-01 18:15:00-05:00)
+2025-12-01 18:15:00,018 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:15:00,061 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:16:00 EST)" executed successfully
+2025-12-01 18:16:00,007 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:17:00 EST)" (scheduled at 2025-12-01 18:16:00-05:00)
+2025-12-01 18:16:00,009 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:16:00,052 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:17:00 EST)" executed successfully
+2025-12-01 18:17:00,005 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:18:00 EST)" (scheduled at 2025-12-01 18:17:00-05:00)
+2025-12-01 18:17:00,007 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:17:00,062 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:18:00 EST)" executed successfully
+2025-12-01 18:18:00,003 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:19:00 EST)" (scheduled at 2025-12-01 18:18:00-05:00)
+2025-12-01 18:18:00,004 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:18:00,043 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:19:00 EST)" executed successfully
+2025-12-01 18:19:00,004 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:20:00 EST)" (scheduled at 2025-12-01 18:19:00-05:00)
+2025-12-01 18:19:00,006 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:19:00,062 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:20:00 EST)" executed successfully
+2025-12-01 18:20:00,003 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:21:00 EST)" (scheduled at 2025-12-01 18:20:00-05:00)
+2025-12-01 18:20:00,009 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:20:00,057 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:21:00 EST)" executed successfully
+2025-12-01 18:21:00,004 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:22:00 EST)" (scheduled at 2025-12-01 18:21:00-05:00)
+2025-12-01 18:21:00,005 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-01 18:21:00,048 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-01 18:22:00 EST)" executed successfully
+2025-12-01 18:21:40,809 - consumer.queue_listener - INFO - Received signal 2, initiating graceful shutdown...
+2025-12-01 18:21:40,810 - consumer.queue_listener - INFO - Stopping queue listener...
+2025-12-01 18:21:40,823 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108124ad0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-01 18:21:40,858 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x108124ad0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-01 18:21:40,858 - consumer.queue_listener - INFO - Channel closed
+2025-12-01 18:21:40,858 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-12-01 18:21:40,858 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-12-01 18:21:40,875 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56622), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:21:40,876 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56622), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:21:40,876 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56622), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:21:40,878 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-01 18:21:40,878 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-01 18:21:40,879 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=12, family=2, type=1, proto=6, laddr=('10.3.13.144', 56622), raddr=('34.196.5.176', 5672)>
+2025-12-01 18:21:40,879 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-12-01 18:21:40,879 - consumer.queue_listener - INFO - Connection closed
+2025-12-01 18:21:40,879 - consumer.queue_listener - INFO - Queue listener stopped
+2025-12-01 18:21:40,879 - consumer.queue_listener - ERROR - Error in consumer: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/consumer/queue_listener.py", line 184, in start
+    self.channel.start_consuming()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 514, in _flush_output
+    self._impl.ioloop.poll()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 579, in poll
+    self._poller.poll()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 1064, in poll
+    kevents = self._kqueue.control(None, 1000, self._get_max_wait())
+OSError: [Errno 9] Bad file descriptor
+2025-12-01 18:21:40,887 - __main__ - ERROR - Fatal error: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/run.py", line 78, in main
+    listener.start()
+    ~~~~~~~~~~~~~~^^
+  File "/Users/chetankumar/Documents/3rd sem/613/Projects/Notification_Code/notification-service/consumer/queue_listener.py", line 184, in start
+    self.channel.start_consuming()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 1883, in start_consuming
+    self._process_data_events(time_limit=None)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 2044, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 842, in process_data_events
+    self._flush_output(common_terminator)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/blocking_connection.py", line 514, in _flush_output
+    self._impl.ioloop.poll()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 579, in poll
+    self._poller.poll()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/pika/adapters/select_connection.py", line 1064, in poll
+    kevents = self._kqueue.control(None, 1000, self._get_max_wait())
+OSError: [Errno 9] Bad file descriptor
+2025-12-01 18:21:40,889 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-01 18:21:40,889 - scheduler.reminder_scheduler - INFO - Reminder scheduler stopped
+2025-12-01 18:21:40,889 - __main__ - INFO - ============================================================
+2025-12-01 18:21:40,889 - __main__ - INFO - Notification Service Stopped
+2025-12-01 18:21:40,889 - __main__ - INFO - ============================================================

@@ -64,6 +64,14 @@ class SchedulerConfig:
     cron_expression: str = os.getenv('SCHEDULER_INTERVAL', '* * * * *')
 
 @dataclass
+class APIConfig:
+    """API server configuration."""
+    host: str = os.getenv('API_HOST', '0.0.0.0')
+    port: int = int(os.getenv('API_PORT', '8001'))
+    enabled: bool = os.getenv('API_ENABLED', 'True').lower() == 'true'
+
+
+@dataclass
 class Settings:
     """Application settings container."""
     lavinmq: LavinMQConfig = None
@@ -71,6 +79,7 @@ class Settings:
     email: EmailConfig = None
     processor: ProcessorConfig = None
     scheduler: SchedulerConfig = None
+    api: APIConfig = None
     log_level: str = os.getenv('LOG_LEVEL', 'INFO')
     log_format: str = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     
@@ -86,6 +95,8 @@ class Settings:
             self.processor = ProcessorConfig()
         if self.scheduler is None:
             self.scheduler = SchedulerConfig()
+        if self.api is None:
+            self.api = APIConfig()
 
 
 # Global settings instance
