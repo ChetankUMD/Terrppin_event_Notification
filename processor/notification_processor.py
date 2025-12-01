@@ -11,7 +11,6 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-
 class NotificationProcessor:
     """Processes notification messages and sends emails to participants."""
     
