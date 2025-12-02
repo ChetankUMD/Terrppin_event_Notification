@@ -5,7 +5,6 @@ from fastapi import APIRouter, HTTPException, BackgroundTasks
 from pydantic import BaseModel
 from typing import Optional
 import logging
-import asyncio
 
 from processor.notification_processor import NotificationProcessor
 from models.dto import Event, NotificationMessage
@@ -15,10 +14,23 @@ logger = logging.getLogger(__name__)
 router = APIRouter()
 
 
+class EventData(BaseModel):
+    """Event data model."""
+    event_id: str
+    event_name: str
+    description: Optional[str] = None
+    start_time: str
+    end_time: str
+    organizer_id: str
+    location: str
+    remaining_seats: int
+    reminder_type: Optional[str] = None
+
+
 class SendNotificationRequest(BaseModel):
     """Request model for sending notifications."""
-    event_id: str
-    notification_type: str = "event_updated"  # event_created, event_updated, event_cancelled, event_reminder
+    type: str  # event_created, event_updated, event_update, event_cancelled, event_reminder
+    event: EventData
 
 
 class SendNotificationResponse(BaseModel):
@@ -30,58 +42,35 @@ class SendNotificationResponse(BaseModel):
     errors: Optional[int] = None
 
 
-async def process_notification_async(event_id: str, notification_type: str):
+async def process_notification_async(notification_type: str, event_data: dict):
     """Process notification asynchronously in background."""
     try:
-        logger.info(f"Processing notification for event_id={event_id}, type={notification_type}")
+        logger.info(f"Processing notification for event_id={event_data.get('event_id')}, type={notification_type}")
         
-        # Import here to avoid circular imports
-        from data.database import get_session, close_session
-        from sqlalchemy import text
+        # Create Event object from provided data
+        event = Event(
+            event_id=event_data.get('event_id', ''),
+            event_name=event_data.get('event_name', ''),
+            description=event_data.get('description'),
+            start_time=event_data.get('start_time', ''),
+            end_time=event_data.get('end_time', ''),
+            organizer_id=event_data.get('organizer_id', ''),
+            location=event_data.get('location', ''),
+            remaining_seats=event_data.get('remaining_seats', 0),
+            reminder_type=event_data.get('reminder_type')
+        )
         
-        # Fetch event details from database
-        session = get_session()
-        try:
-            query = text("""
-                SELECT event_id, event_name, description, start_time, end_time, 
-                       organizer_id, location, remaining_seats
-                FROM events
-                WHERE event_id = :event_id
-            """)
-            
-            result = session.execute(query, {"event_id": event_id})
-            row = result.fetchone()
-            
-            if not row:
-                logger.error(f"Event not found: {event_id}")
-                return
-            
-            # Create Event object
-            event = Event(
-                event_id=row.event_id,
-                event_name=row.event_name,
-                description=row.description,
-                start_time=str(row.start_time) if row.start_time else None,
-                end_time=str(row.end_time) if row.end_time else None,
-                organizer_id=row.organizer_id,
-                location=row.location,
-                remaining_seats=row.remaining_seats
-            )
-            
-            # Create notification message
-            message = NotificationMessage(
-                type=notification_type,
-                event=event
-            )
-            
-            # Process notification
-            processor = NotificationProcessor()
-            await processor.process(message)
-            
-            logger.info(f"Successfully processed notification for event_id={event_id}")
-            
-        finally:
-            close_session(session)
+        # Create notification message
+        message = NotificationMessage(
+            type=notification_type,
+            event=event
+        )
+        
+        # Process notification
+        processor = NotificationProcessor()
+        await processor.process(message)
+        
+        logger.info(f"Successfully processed notification for event_id={event_data.get('event_id')}")
             
     except Exception as e:
         logger.error(f"Error processing notification: {e}", exc_info=True)
@@ -96,7 +85,7 @@ async def send_notification(
     Manually trigger notifications for a specific event.
     
     Args:
-        request: Contains event_id and notification_type
+        request: Contains type and event data
         background_tasks: FastAPI background tasks
         
     Returns:
@@ -104,29 +93,32 @@ async def send_notification(
     """
     try:
         logger.info(
-            f"Received notification request: event_id={request.event_id}, "
-            f"type={request.notification_type}"
+            f"Received notification request: event_id={request.event.event_id}, "
+            f"type={request.type}"
         )
         
         # Validate notification type
-        valid_types = ["event_created", "event_updated", "event_cancelled", "event_reminder"]
-        if request.notification_type not in valid_types:
+        valid_types = ["event_created", "event_updated", "event_update", "event_cancelled", "event_reminder"]
+        if request.type not in valid_types:
             raise HTTPException(
                 status_code=400,
-                detail=f"Invalid notification_type. Must be one of: {', '.join(valid_types)}"
+                detail=f"Invalid type. Must be one of: {', '.join(valid_types)}"
             )
+        
+        # Convert EventData to dict for background task
+        event_dict = request.event.model_dump()
         
         # Queue the notification processing in background
         background_tasks.add_task(
             process_notification_async,
-            request.event_id,
-            request.notification_type
+            request.type,
+            event_dict
         )
         
         return SendNotificationResponse(
             success=True,
-            message=f"Notification processing queued for event {request.event_id}",
-            event_id=request.event_id
+            message=f"Notification processing queued for event {request.event.event_id}",
+            event_id=request.event.event_id
         )
         
     except HTTPException:

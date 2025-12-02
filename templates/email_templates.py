@@ -78,6 +78,71 @@ class EmailTemplateLoader:
 </html>
             """
         },
+        'event_update': {
+            'subject': 'Event Updated: {event_name}',
+            'body': """
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {{ font-family: Arial, sans-serif; line-height: 1.6; color: #333; }}
+        .container {{ max-width: 600px; margin: 0 auto; padding: 20px; }}
+        .header {{ background-color: #4CAF50; color: white; padding: 20px; text-align: center; border-radius: 5px 5px 0 0; }}
+        .content {{ background-color: #f9f9f9; padding: 30px; margin-top: 0; border-radius: 0 0 5px 5px; }}
+        .event-details {{ background-color: white; padding: 20px; margin: 20px 0; border-left: 4px solid #4CAF50; }}
+        .detail-row {{ margin: 10px 0; }}
+        .label {{ font-weight: bold; color: #555; }}
+        .value {{ color: #333; }}
+        .footer {{ text-align: center; margin-top: 20px; color: #777; font-size: 12px; }}
+        .seats {{ color: #4CAF50; font-weight: bold; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 Event Updated</h1>
+        </div>
+        <div class="content">
+            <p>Hello {name},</p>
+            <p>The event you are registered for has been updated. Please review the latest details below:</p>
+            
+            <div class="event-details">
+                <h2 style="margin-top: 0; color: #4CAF50;">{event_name}</h2>
+                
+                <div class="detail-row">
+                    <span class="label">📍 Location:</span>
+                    <span class="value">{location}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="label">🕐 Start Time:</span>
+                    <span class="value">{start_time}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="label">🕐 End Time:</span>
+                    <span class="value">{end_time}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="label">💺 Available Seats:</span>
+                    <span class="seats">{remaining_seats} seats remaining</span>
+                </div>
+                
+                {description_section}
+            </div>
+            
+            <p>Please make note of any changes to the event schedule or location.</p>
+        </div>
+        <div class="footer">
+            <p>Event ID: {event_id}</p>
+            <p>This is an automated notification. Please do not reply to this email.</p>
+        </div>
+    </div>
+</body>
+</html>
+            """
+        },
         'event_created': {
             'subject': 'New Event: {event_name}',
             'body': """

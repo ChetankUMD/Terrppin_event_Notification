@@ -7,7 +7,43 @@ from datetime import datetime
 import json
 
 
-EventType = Literal['event_updated', 'event_created', 'event_cancelled', 'event_reminder']
+EventType = Literal['event_updated', 'event_update', 'event_created', 'event_cancelled', 'event_reminder']
+
+
+@dataclass
+class BookingBatchResponse:
+    """Booking data from the booking service API."""
+    booking_id: str
+    event_id: str
+    user_id: str
+    user_email: str
+    event_name: Optional[str] = None
+    booking_time: Optional[str] = None
+    status: str = 'confirmed'
+    
+    @classmethod
+    def from_dict(cls, data: dict) -> 'BookingBatchResponse':
+        """Create BookingBatchResponse from dictionary."""
+        return cls(
+            booking_id=data['booking_id'],
+            event_id=data['event_id'],
+            user_id=data['user_id'],
+            user_email=data['user_email'],
+            event_name=data.get('event_name'),
+            booking_time=data.get('booking_time'),
+            status=data.get('status', 'confirmed')
+        )
+    
+    @property
+    def email(self):
+        """Alias for user_email for backward compatibility."""
+        return self.user_email
+    
+    @property
+    def name(self):
+        """Extract name from email for backward compatibility."""
+        return self.user_email.split('@')[0] if self.user_email else 'User'
+
 
 
 @dataclass
@@ -86,7 +122,7 @@ class NotificationMessage:
             raise ValueError("Missing required field: 'event'")
         
         event_type = data['type']
-        if event_type not in ['event_updated', 'event_created', 'event_cancelled', 'event_reminder']:
+        if event_type not in ['event_updated', 'event_update', 'event_created', 'event_cancelled', 'event_reminder']:
             raise ValueError(f"Invalid event type: {event_type}")
         
         try:

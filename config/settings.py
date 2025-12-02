@@ -59,6 +59,13 @@ class ProcessorConfig:
 
 
 @dataclass
+class BookingServiceConfig:
+    """Booking service API configuration."""
+    base_url: str = os.getenv('BOOKING_SERVICE_URL', 'http://localhost:8000')
+    timeout: int = int(os.getenv('BOOKING_SERVICE_TIMEOUT', '30'))
+
+
+@dataclass
 class SchedulerConfig:
     """Scheduler configuration."""
     cron_expression: str = os.getenv('SCHEDULER_INTERVAL', '* * * * *')
@@ -79,6 +86,7 @@ class Settings:
     email: EmailConfig = None
     processor: ProcessorConfig = None
     scheduler: SchedulerConfig = None
+    booking_service: BookingServiceConfig = None
     api: APIConfig = None
     log_level: str = os.getenv('LOG_LEVEL', 'INFO')
     log_format: str = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -95,6 +103,8 @@ class Settings:
             self.processor = ProcessorConfig()
         if self.scheduler is None:
             self.scheduler = SchedulerConfig()
+        if self.booking_service is None:
+            self.booking_service = BookingServiceConfig()
         if self.api is None:
             self.api = APIConfig()
 
