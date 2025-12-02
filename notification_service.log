@@ -53199,3 +53199,103 @@ OSError: [Errno 9] Bad file descriptor
 2025-12-02 15:32:11,435 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
 2025-12-02 15:32:11,435 - consumer.queue_listener - INFO - Connection closed in start() finally block
 2025-12-02 15:32:11,436 - main - INFO - Queue listener thread stopped
+2025-12-02 15:44:50,843 - api.main - INFO - Notification Service API started
+2025-12-02 15:44:50,843 - __main__ - INFO - Initializing background services...
+2025-12-02 15:44:50,843 - __main__ - INFO - Initializing database...
+2025-12-02 15:44:50,843 - data.database - INFO - Initializing database...
+2025-12-02 15:44:51,260 - data.database - INFO - Database initialized successfully
+2025-12-02 15:44:51,260 - __main__ - INFO - Starting reminder scheduler...
+2025-12-02 15:44:51,260 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-12-02 15:44:51,275 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-02 15:44:51,275 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-12-02 15:44:51,275 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-02 15:44:51,276 - scheduler.reminder_scheduler - INFO - Reminder scheduler started with cron: * * * * *
+2025-12-02 15:44:51,276 - __main__ - INFO - Starting queue listener...
+2025-12-02 15:44:51,301 - email_service.email_service - INFO - Email service initialized with provider: SendGrid (HTTP API)
+2025-12-02 15:44:51,301 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-12-02 15:44:51,301 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-12-02 15:44:51,301 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-12-02 15:44:51,301 - __main__ - INFO - Queue listener started in background thread
+2025-12-02 15:44:51,301 - main - INFO - Initializing background services...
+2025-12-02 15:44:51,301 - main - INFO - Initializing database...
+2025-12-02 15:44:51,301 - data.database - INFO - Initializing database...
+2025-12-02 15:44:51,330 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-12-02 15:44:51,337 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=15, family=2, type=1, proto=6, laddr=('10.3.13.144', 58706), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:44:51,338 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105358ec0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105358ec0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-12-02 15:44:51,364 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105358ec0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-02 15:44:51,364 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105358ec0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-02 15:44:51,364 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105358ec0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-02 15:44:51,364 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-12-02 15:44:51,374 - data.database - INFO - Database initialized successfully
+2025-12-02 15:44:51,374 - main - INFO - Starting reminder scheduler...
+2025-12-02 15:44:51,375 - scheduler.reminder_scheduler - INFO - Starting reminder scheduler...
+2025-12-02 15:44:51,375 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-12-02 15:44:51,375 - apscheduler.scheduler - INFO - Added job "Check Event Reminders" to job store "default"
+2025-12-02 15:44:51,375 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-02 15:44:51,375 - scheduler.reminder_scheduler - INFO - Reminder scheduler started with cron: * * * * *
+2025-12-02 15:44:51,375 - main - INFO - Starting queue listener...
+2025-12-02 15:44:51,375 - email_service.email_service - INFO - Email service initialized with provider: SendGrid (HTTP API)
+2025-12-02 15:44:51,375 - processor.notification_processor - INFO - NotificationProcessor initialized with batch_size=100
+2025-12-02 15:44:51,375 - consumer.queue_listener - INFO - QueueListener initialized for queue: notification
+2025-12-02 15:44:51,376 - consumer.queue_listener - INFO - Connecting to LavinMQ at possum.lmq.cloudamqp.com:5672...
+2025-12-02 15:44:51,376 - main - INFO - Queue listener started in background thread
+2025-12-02 15:44:51,377 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('34.196.5.176', 5672)
+2025-12-02 15:44:51,385 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=20, family=2, type=1, proto=6, laddr=('10.3.13.144', 58709), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:44:51,386 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105378f50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105378f50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>).
+2025-12-02 15:44:51,386 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-12-02 15:44:51,386 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-12-02 15:44:51,394 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-12-02 15:44:51,409 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105378f50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-02 15:44:51,409 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105378f50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-02 15:44:51,409 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105378f50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>
+2025-12-02 15:44:51,409 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-12-02 15:44:51,432 - consumer.queue_listener - INFO - Successfully connected to LavinMQ
+2025-12-02 15:44:51,432 - consumer.queue_listener - INFO - Starting to consume messages from queue: notification
+2025-12-02 15:44:51,439 - consumer.queue_listener - INFO - Waiting for messages. Press CTRL+C to exit.
+2025-12-02 15:45:00,002 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-02 15:46:00 EST)" (scheduled at 2025-12-02 15:45:00-05:00)
+2025-12-02 15:45:00,002 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-02 15:45:00,005 - apscheduler.executors.default - INFO - Running job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-02 15:46:00 EST)" (scheduled at 2025-12-02 15:45:00-05:00)
+2025-12-02 15:45:00,005 - scheduler.reminder_scheduler - INFO - Checking for pending event reminders...
+2025-12-02 15:45:00,048 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-02 15:46:00 EST)" executed successfully
+2025-12-02 15:45:00,121 - apscheduler.executors.default - INFO - Job "Check Event Reminders (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-12-02 15:46:00 EST)" executed successfully
+2025-12-02 15:45:05,134 - api.main - INFO - Notification Service API shutting down
+2025-12-02 15:45:05,135 - __main__ - INFO - Shutting down background services...
+2025-12-02 15:45:05,135 - __main__ - INFO - Stopping scheduler...
+2025-12-02 15:45:05,135 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-02 15:45:05,136 - scheduler.reminder_scheduler - INFO - Reminder scheduler stopped
+2025-12-02 15:45:05,136 - __main__ - INFO - Stopping queue listener...
+2025-12-02 15:45:05,136 - consumer.queue_listener - INFO - Stopping queue listener...
+2025-12-02 15:45:05,145 - consumer.queue_listener - INFO - Channel stop_consuming called
+2025-12-02 15:45:05,145 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-12-02 15:45:05,145 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105358ec0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-02 15:45:05,155 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105358ec0> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-02 15:45:05,156 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-12-02 15:45:05,165 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=15, family=2, type=1, proto=6, laddr=('10.3.13.144', 58706), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:45:05,165 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=15, family=2, type=1, proto=6, laddr=('10.3.13.144', 58706), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:45:05,165 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=15, family=2, type=1, proto=6, laddr=('10.3.13.144', 58706), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:45:05,165 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-02 15:45:05,166 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-02 15:45:05,170 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=15, family=2, type=1, proto=6, laddr=('10.3.13.144', 58706), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:45:05,171 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-12-02 15:45:05,171 - consumer.queue_listener - INFO - Connection closed in start() finally block
+2025-12-02 15:45:05,172 - __main__ - INFO - Queue listener thread stopped
+2025-12-02 15:45:05,172 - main - INFO - Shutting down background services...
+2025-12-02 15:45:05,172 - main - INFO - Stopping scheduler...
+2025-12-02 15:45:05,172 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-12-02 15:45:05,173 - scheduler.reminder_scheduler - INFO - Reminder scheduler stopped
+2025-12-02 15:45:05,173 - main - INFO - Stopping queue listener...
+2025-12-02 15:45:05,173 - consumer.queue_listener - INFO - Stopping queue listener...
+2025-12-02 15:45:05,180 - consumer.queue_listener - INFO - Channel stop_consuming called
+2025-12-02 15:45:05,180 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-12-02 15:45:05,181 - pika.channel - INFO - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105378f50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-02 15:45:05,191 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x105378f50> params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>>
+2025-12-02 15:45:05,191 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-12-02 15:45:05,199 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=20, family=2, type=1, proto=6, laddr=('10.3.13.144', 58709), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:45:05,200 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=20, family=2, type=1, proto=6, laddr=('10.3.13.144', 58709), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:45:05,200 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=20, family=2, type=1, proto=6, laddr=('10.3.13.144', 58709), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:45:05,200 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-02 15:45:05,200 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-12-02 15:45:05,200 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=20, family=2, type=1, proto=6, laddr=('10.3.13.144', 58709), raddr=('34.196.5.176', 5672)>
+2025-12-02 15:45:05,200 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=possum.lmq.cloudamqp.com port=5672 virtual_host=tbgpqjjh ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-12-02 15:45:05,200 - consumer.queue_listener - INFO - Connection closed in start() finally block
+2025-12-02 15:45:05,200 - main - INFO - Queue listener thread stopped

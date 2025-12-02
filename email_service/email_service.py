@@ -11,6 +11,7 @@ from typing import Optional
 from config.settings import settings
 import logging
 from email.message import EmailMessage
+from aiosmtplib import send
 
 logger = logging.getLogger(__name__)
 
@@ -86,7 +87,7 @@ class SMTPEmailProvider(EmailProvider):
         start_tls = self.config.smtp_port == 587
         
         # Use send_message helper which handles connection automatically
-        await aiosmtplib.send(
+        await send(
             message,
             hostname=self.config.smtp_host,
             port=self.config.smtp_port,
