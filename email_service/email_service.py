@@ -220,18 +220,18 @@ class EmailService:
         """
         try:
             msg = EmailMessage()
-            msg["From"] = "chetank@umd.edu"
+            msg["From"] = "nikhilvishnubonageri@gmail.com"
             msg["To"] = to
             msg["Subject"] = subject
-            msg.set_content(body)
+            msg.set_content(body, subtype='html')
             #return await self.provider.send_email(to, subject, body)
             await send(
                 msg,
                 hostname="smtp.gmail.com",
                 port=587,
                 start_tls=True,
-                username="chetank@umd.edu",
-                password="unaitdvjjwonuuwo",
+                username="nikhilvishnubonageri@gmail.com",
+                password="bgrzaxhfetifsuky",
             )
         except Exception as e:
             logger.error(f"Failed to send email to {to}: {e}")
