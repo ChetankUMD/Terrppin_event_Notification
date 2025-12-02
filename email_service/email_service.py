@@ -118,6 +118,10 @@ class EmailService:
             Exception: If SMTP sending fails
         """
         try:
+            # Determine security settings based on port
+            use_tls = self.config.smtp_port == 465
+            start_tls = self.config.smtp_port == 587
+            
             # Use send_message helper which handles connection automatically
             await aiosmtplib.send(
                 message,
@@ -125,7 +129,8 @@ class EmailService:
                 port=self.config.smtp_port,
                 username=self.config.smtp_username,
                 password=self.config.smtp_password,
-                start_tls=True if self.config.smtp_port == 587 else False,
+                use_tls=use_tls,
+                start_tls=start_tls,
                 timeout=30
             )
         except Exception as e:
