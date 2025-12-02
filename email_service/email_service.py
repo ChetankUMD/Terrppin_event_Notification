@@ -10,6 +10,7 @@ from email.mime.multipart import MIMEMultipart
 from typing import Optional
 from config.settings import settings
 import logging
+from email.message import EmailMessage
 
 logger = logging.getLogger(__name__)
 
@@ -217,8 +218,20 @@ class EmailService:
             True if email sent successfully, False otherwise
         """
         try:
-            return await self.provider.send_email(to, subject, body)
-            
+            msg = EmailMessage()
+            msg["From"] = "chetank@umd.edu"
+            msg["To"] = to
+            msg["Subject"] = subject
+            msg.set_content(body)
+            #return await self.provider.send_email(to, subject, body)
+            await send(
+                msg,
+                hostname="smtp.gmail.com",
+                port=587,
+                start_tls=True,
+                username="chetank@umd.edu",
+                password="unaitdvjjwonuuwo",
+            )
         except Exception as e:
             logger.error(f"Failed to send email to {to}: {e}")
             
