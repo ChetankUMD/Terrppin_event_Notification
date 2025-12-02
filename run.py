@@ -58,6 +58,7 @@ def main():
     logger.info("=" * 60)
     
     try:
+        
         # Initialize database
         logger.info("Initializing database...")
         init_database()
