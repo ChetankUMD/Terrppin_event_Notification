@@ -26,19 +26,9 @@ class QueueListener:
         self.should_stop = False
         self.processor = NotificationProcessor()
         
-        # Setup signal handlers for graceful shutdown
-        signal.signal(signal.SIGINT, self._signal_handler)
-        signal.signal(signal.SIGTERM, self._signal_handler)
-        
         logger.info(
             f"QueueListener initialized for queue: {self.config.queue_name}"
         )
-    
-    def _signal_handler(self, signum, frame):
-        """Handle shutdown signals gracefully."""
-        logger.info(f"Received signal {signum}, initiating graceful shutdown...")
-        self.should_stop = True
-        self.stop()
     
     def connect(self):
         """Establish connection to LavinMQ."""
@@ -189,24 +179,48 @@ class QueueListener:
         except Exception as e:
             logger.error(f"Error in consumer: {e}", exc_info=True)
             raise
+        finally:
+            if self.connection and self.connection.is_open:
+                try:
+                    self.connection.close()
+                    logger.info("Connection closed in start() finally block")
+                except Exception as e:
+                    logger.error(f"Error closing connection: {e}")
     
     def stop(self):
         """Stop listening and close connections gracefully."""
         logger.info("Stopping queue listener...")
         
-        try:
+        def _stop_consuming():
             if self.channel and self.channel.is_open:
                 self.channel.stop_consuming()
-                self.channel.close()
-                logger.info("Channel closed")
-        except Exception as e:
-            logger.error(f"Error closing channel: {e}")
-        
+                logger.info("Channel stop_consuming called")
+
         try:
             if self.connection and self.connection.is_open:
-                self.connection.close()
-                logger.info("Connection closed")
+                self.connection.add_callback_threadsafe(_stop_consuming)
+            elif self.channel and self.channel.is_open:
+                 # Fallback if connection is somehow not open but channel is? Unlikely.
+                 # Or if we are in the same thread (unlikely given the usage plan).
+                 self.channel.stop_consuming()
         except Exception as e:
-            logger.error(f"Error closing connection: {e}")
+            logger.error(f"Error scheduling stop_consuming: {e}")
         
-        logger.info("Queue listener stopped")
+        # We can't close the connection here immediately because stop_consuming is async
+        # The start() method will return after stop_consuming finishes, then we can close.
+        # But start() is in a loop.
+        # Actually, start_consuming blocks. When stop_consuming is processed, start_consuming returns.
+        # Then we can close.
+        
+        # However, we need to ensure the connection is closed.
+        # The start() method doesn't close the connection after start_consuming returns.
+        # We should update start() to close connection in finally block?
+        # Or just rely on the fact that we will close it here?
+        # If we close it here, we might race with the loop.
+        
+        # Let's look at start():
+        # self.channel.start_consuming()
+        # ...
+        
+        # If we just stop consuming, start_consuming returns.
+        # Then we should close the connection.
