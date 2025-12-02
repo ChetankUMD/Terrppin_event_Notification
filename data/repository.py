@@ -4,6 +4,7 @@ Repository for participant data access with pagination support.
 from typing import List, Optional
 from sqlalchemy.orm import Session
 from data.database import Participant, get_session, close_session
+from api.booking_client import BookingAPIClient
 import logging
 
 logger = logging.getLogger(__name__)
@@ -12,13 +13,15 @@ logger = logging.getLogger(__name__)
 class ParticipantRepository:
     """Repository for managing participant data access."""
     
-    def __init__(self, session: Optional[Session] = None):
+    def __init__(self, booking_client: Optional[BookingAPIClient] = None, session: Optional[Session] = None):
         """
         Initialize repository.
         
         Args:
+            booking_client: Optional BookingAPIClient. If not provided, a new one will be created.
             session: Optional SQLAlchemy session. If not provided, a new session will be created.
         """
+        self.booking_client = booking_client or BookingAPIClient()
         self.session = session
         self._owns_session = session is None
         if self._owns_session:
@@ -32,7 +35,7 @@ class ParticipantRepository:
     ) -> List[Participant]:
         """
         Retrieve participants for a specific event with pagination.
-        Queries from the bookings table directly.
+        Uses the BookingAPIClient to fetch booking data.
         
         Args:
             event_id: The event ID to filter participants (UUID string)
@@ -48,48 +51,38 @@ class ParticipantRepository:
                 f"offset={offset}, limit={limit}"
             )
             
-            # Query from bookings table
-            from sqlalchemy import text
-            query = text("""
-                SELECT booking_id, event_id, user_id, user_email, 
-                       event_name, booking_time, status
-                FROM bookings
-                WHERE event_id = :event_id
-                AND status = 'confirmed'
-                ORDER BY booking_time
-                OFFSET :offset
-                LIMIT :limit
-            """)
-            
-            result = self.session.execute(
-                query,
-                {"event_id": event_id, "offset": offset, "limit": limit}
+            # Fetch bookings from API
+            bookings = self.booking_client.get_bookings_batch(
+                event_id=event_id,
+                offset=offset,
+                batch_size=limit
             )
             
             # Convert to Participant objects
             participants = []
-            for row in result:
+            for booking in bookings:
                 participant = Participant(
-                    booking_id=row.booking_id,
-                    event_id=row.event_id,
-                    user_id=row.user_id,
-                    user_email=row.user_email,
-                    event_name=row.event_name,
-                    booking_time=str(row.booking_time) if row.booking_time else None,
-                    status=row.status
+                    booking_id=booking.booking_id,
+                    event_id=booking.event_id,
+                    user_id=booking.user_id,
+                    user_email=booking.user_email,
+                    event_name=booking.event_name,
+                    booking_time=booking.booking_time,
+                    status=booking.status
                 )
                 participants.append(participant)
             
-            logger.debug(f"Retrieved {len(participants)} participants from bookings table")
+            logger.debug(f"Retrieved {len(participants)} participants from API")
             return participants
             
         except Exception as e:
-            logger.error(f"Error fetching participants from bookings: {e}")
+            logger.error(f"Error fetching participants from API: {e}")
             raise
     
     def count_participants_by_event(self, event_id: str) -> int:
         """
-        Count total participants for an event from bookings table.
+        Count total participants for an event.
+        Uses the BookingAPIClient to get the count.
         
         Args:
             event_id: The event ID to count participants for (UUID string)
@@ -98,17 +91,7 @@ class ParticipantRepository:
             Total number of confirmed bookings
         """
         try:
-            from sqlalchemy import text
-            query = text("""
-                SELECT COUNT(*) 
-                FROM bookings 
-                WHERE event_id = :event_id 
-                AND status = 'confirmed'
-            """)
-            
-            result = self.session.execute(query, {"event_id": event_id})
-            count = result.scalar()
-            
+            count = self.booking_client.get_bookings_count(event_id)
             logger.debug(f"Total participants for event_id={event_id}: {count}")
             return count
             

@@ -146,3 +146,113 @@ class TestParticipantRepository:
         """Test that close method exists and can be called."""
         # Should not raise any errors
         repository.close()
+    
+    def test_add_participant(self):
+        """Test adding a participant to the database."""
+        with patch('data.repository.get_session') as mock_get_session:
+            mock_session = Mock()
+            mock_get_session.return_value = mock_session
+            
+            repo = ParticipantRepository()
+            
+            participant = repo.add_participant(
+                booking_id="booking-123",
+                event_id="event-456",
+                user_id="user-789",
+                user_email="user@example.com",
+                event_name="Test Event",
+                booking_time="2024-12-01T10:00:00",
+                status="confirmed"
+            )
+            
+            assert participant is not None
+            mock_session.add.assert_called_once()
+            mock_session.commit.assert_called_once()
+    
+    def test_add_participant_rollback_on_error(self):
+        """Test that session rolls back on error during add_participant."""
+        with patch('data.repository.get_session') as mock_get_session:
+            mock_session = Mock()
+            mock_session.commit.side_effect = Exception("Database error")
+            mock_get_session.return_value = mock_session
+            
+            repo = ParticipantRepository()
+            
+            with pytest.raises(Exception, match="Database error"):
+                repo.add_participant(
+                    booking_id="booking-123",
+                    event_id="event-456",
+                    user_id="user-789",
+                    user_email="user@example.com"
+                )
+            
+            mock_session.rollback.assert_called_once()
+    
+    def test_add_participants_from_bookings(self):
+        """Test bulk adding participants from booking data."""
+        with patch('data.repository.get_session') as mock_get_session:
+            mock_session = Mock()
+            mock_get_session.return_value = mock_session
+            
+            repo = ParticipantRepository()
+            
+            bookings = [
+                {
+                    "booking_id": "booking-1",
+                    "event_id": "event-123",
+                    "user_id": "user-1",
+                    "user_email": "user1@example.com",
+                    "event_name": "Event 1",
+                    "status": "confirmed"
+                },
+                {
+                    "booking_id": "booking-2",
+                    "event_id": "event-123",
+                    "user_id": "user-2",
+                    "user_email": "user2@example.com",
+                    "event_name": "Event 1",
+                    "status": "confirmed"
+                }
+            ]
+            
+            count = repo.add_participants_from_bookings(bookings)
+            
+            assert count == 2
+            assert mock_session.add.call_count == 2
+            assert mock_session.commit.call_count == 2
+    
+    def test_add_participants_from_bookings_partial_failure(self):
+        """Test that bulk add continues on individual failures."""
+        with patch('data.repository.get_session') as mock_get_session:
+            mock_session = Mock()
+            # First commit succeeds, second fails, third succeeds
+            mock_session.commit.side_effect = [None, Exception("Error"), None]
+            mock_get_session.return_value = mock_session
+            
+            repo = ParticipantRepository()
+            
+            bookings = [
+                {
+                    "booking_id": "booking-1",
+                    "event_id": "event-123",
+                    "user_id": "user-1",
+                    "user_email": "user1@example.com"
+                },
+                {
+                    "booking_id": "booking-2",
+                    "event_id": "event-123",
+                    "user_id": "user-2",
+                    "user_email": "user2@example.com"
+                },
+                {
+                    "booking_id": "booking-3",
+                    "event_id": "event-123",
+                    "user_id": "user-3",
+                    "user_email": "user3@example.com"
+                }
+            ]
+            
+            count = repo.add_participants_from_bookings(bookings)
+            
+            # Should have added 2 successfully (first and third)
+            assert count == 2

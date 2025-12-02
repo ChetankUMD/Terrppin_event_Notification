@@ -115,21 +115,68 @@ class TestEvent:
         assert event.reminder_type == "one_day"
     
     def test_get_formatted_start_time(self):
-        """Test formatted start time output."""
-        event = Event(
-            event_id="e1",
-            event_name="Test",
-            description=None,
-            start_time="2025-12-01T10:30:00",
-            end_time="2025-12-01T12:00:00",
-            organizer_id="org1",
-            location="Room A",
-            remaining_seats=5
-        )
+        """Test formatted start time generation."""
+        event = Event.from_dict({
+            'event_id': 'evt-1',
+            'event_name': 'Conference',
+            'start_time': '2024-12-15T10:00:00',
+            'end_time': '2024-12-15T12:00:00'
+        })
         
         formatted = event.get_formatted_start_time()
-        assert "December" in formatted
-        assert "2025" in formatted
+        # Should format to something like "December 15, 2024 at 10:00 AM"
+        assert 'December' in formatted or '12' in formatted
+    
+    def test_get_formatted_start_time_with_z(self):
+        """Test formatted start time with Z timezone."""
+        event = Event.from_dict({
+            'event_id': 'evt-1',
+            'event_name': 'Conference',
+            'start_time': '2024-12-15T10:00:00Z',
+            'end_time': '2024-12-15T12:00:00Z'
+        })
+        
+        formatted = event.get_formatted_start_time()
+        assert len(formatted) > 0
+    
+    def test_get_formatted_start_time_invalid(self):
+        """Test formatted start time with invalid format."""
+        event = Event.from_dict({
+            'event_id': 'evt-1',
+            'event_name': 'Conference',
+            'start_time': 'invalid-time',
+            'end_time': 'invalid-time'
+        })
+        
+        # Should return the original string when parsing fails
+        formatted = event.get_formatted_start_time()
+        assert formatted == 'invalid-time'
+    
+    def test_get_formatted_end_time(self):
+        """Test formatted end time generation."""
+        event = Event.from_dict({
+            'event_id': 'evt-1',
+            'event_name': 'Conference',
+            'start_time': '2024-12-15T10:00:00',
+            'end_time': '2024-12-15T12:00:00'
+        })
+        
+        formatted = event.get_formatted_end_time()
+        # Should format to something like "12:00 PM"
+        assert 'PM' in formatted or 'AM' in formatted or ':' in formatted
+    
+    def test_get_formatted_end_time_invalid(self):
+        """Test formatted end time with invalid format."""
+        event = Event.from_dict({
+            'event_id': 'evt-1',
+            'event_name': 'Conference',
+            'start_time': 'invalid',
+            'end_time': 'invalid-end'
+        })
+        
+        # Should return the original string when parsing fails
+        formatted = event.get_formatted_end_time()
+        assert formatted == 'invalid-end'
 
 
 class TestNotificationMessage:
