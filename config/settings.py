@@ -39,14 +39,24 @@ class DatabaseConfig:
 @dataclass
 class EmailConfig:
     """Email service configuration."""
+    # Provider selection: 'smtp' or 'sendgrid'
+    provider: str = os.getenv('EMAIL_PROVIDER', 'smtp')
+    
+    # SMTP configuration
     smtp_host: str = os.getenv('SMTP_HOST', 'localhost')
     smtp_port: int = int(os.getenv('SMTP_PORT', '587'))
     smtp_username: str = os.getenv('SMTP_USERNAME', '')
     smtp_password: str = os.getenv('SMTP_PASSWORD', '')
+    use_tls: bool = os.getenv('SMTP_USE_TLS', 'True').lower() == 'true'
+    
+    # SendGrid configuration
+    sendgrid_api_key: str = os.getenv('SENDGRID_API_KEY', '')
+    
+    # Common configuration
     from_email: str = os.getenv('FROM_EMAIL', 'notifications@example.com')
     from_name: str = os.getenv('FROM_NAME', 'Notification Service')
-    use_tls: bool = os.getenv('SMTP_USE_TLS', 'True').lower() == 'true'
-    # Dummy mode for testing without real SMTP
+    
+    # Dummy mode for testing without real email sending
     dummy_mode: bool = os.getenv('EMAIL_DUMMY_MODE', 'True').lower() == 'true'
 
 
